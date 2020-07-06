@@ -381,15 +381,9 @@ var _hmt = _hmt || [];
 <blockquote>
 <p>\usepackage{algorithm} %format of the algorithm<br>\usepackage{algorithmic} %format of the algorithm<br>\usepackage{multirow} %multirow for format of table<br>\usepackage{amsmath}<br>\usepackage{xcolor}</p>
 </blockquote>
-<p>重新定义require和ensure命令对应的关键字(此处将默认的Require/Ensure自定义为Input/Output)</p>
-<blockquote>
-<p>\renewcommand{\algorithmicrequire}{\textbf{Input:}}<br>\renewcommand{\algorithmicensure}{\textbf{Output:}}</p>
-</blockquote>
-<p>分析一下示例：</p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;algorithm&#125;</span></span> <span class="comment">%算法开始 </span></span><br><span class="line"><span class="tag">\<span class="name">caption</span><span class="string">&#123;Sample algorithm&#125;</span></span> <span class="comment">%算法的题目 </span></span><br><span class="line"><span class="tag">\<span class="name">label</span><span class="string">&#123;alg1&#125;</span></span> <span class="comment">%算法的标签 </span></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;algorithmic&#125;</span><span class="string">[1]</span></span> <span class="comment">%此处的[1]控制一下算法中的每句前面都有标号 </span></span><br><span class="line"><span class="tag">\<span class="name">REQUIRE</span></span> Text:Today is a good day. Variables:<span class="formula">$u,v,w$</span>. <span class="formula">$G=(V,E)$</span> <span class="comment">%输入条件(此处的REQUIRE默认关键字为Require，在上面已自定义为Input) </span></span><br><span class="line"><span class="tag">\<span class="name">ENSURE</span></span> Something... <span class="comment">%输出结果(此处的ENSURE默认关键字为Ensure在上面已自定义为Output) </span></span><br><span class="line"><span class="comment">% if-then-else </span></span><br><span class="line"><span class="tag">\<span class="name">IF</span><span class="string">&#123;some condition is true&#125;</span></span> </span><br><span class="line"><span class="tag">\<span class="name">STATE</span></span> do some processing </span><br><span class="line"><span class="tag">\<span class="name">ELSIF</span><span class="string">&#123;some other condition is true&#125;</span></span> </span><br><span class="line"><span class="tag">\<span class="name">STATE</span></span> do some different processing </span><br><span class="line"><span class="tag">\<span class="name">ELSE</span></span> </span><br><span class="line"><span class="tag">\<span class="name">STATE</span></span> do the default actions </span><br><span class="line"><span class="tag">\<span class="name">ENDIF</span></span> </span><br><span class="line"><span class="comment">% for loop </span></span><br><span class="line"><span class="tag">\<span class="name">FOR</span><span class="string">&#123;$i=0$ to $10$&#125;</span></span> </span><br><span class="line"><span class="tag">\<span class="name">STATE</span></span> carry out some processing </span><br><span class="line"><span class="tag">\<span class="name">ENDFOR</span></span> </span><br><span class="line"><span class="tag">\<span class="name">FORALL</span><span class="string">&#123;$i$ such that $0\leq i\leq 10$&#125;</span></span> </span><br><span class="line"><span class="tag">\<span class="name">STATE</span></span> carry out some processing </span><br><span class="line"><span class="tag">\<span class="name">ENDFOR</span></span> </span><br><span class="line"><span class="comment">% while-loop </span></span><br><span class="line"><span class="tag">\<span class="name">WHILE</span><span class="string">&#123;some condition holds&#125;</span></span> </span><br><span class="line"><span class="tag">\<span class="name">STATE</span></span> carry out some processing </span><br><span class="line"><span class="tag">\<span class="name">ENDWHILE</span></span> </span><br><span class="line"><span class="comment">% repeat-until loop </span></span><br><span class="line"><span class="tag">\<span class="name">REPEAT</span></span> </span><br><span class="line"><span class="tag">\<span class="name">STATE</span></span> carry out some processing </span><br><span class="line"><span class="tag">\<span class="name">UNTIL</span><span class="string">&#123;some condition is met&#125;</span></span> </span><br><span class="line"><span class="comment">% infinite loop </span></span><br><span class="line"><span class="tag">\<span class="name">LOOP</span></span> </span><br><span class="line"><span class="tag">\<span class="name">STATE</span></span> this processing will be repeated forever </span><br><span class="line"><span class="tag">\<span class="name">ENDLOOP</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;algorithmic&#125;</span></span> </span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;algorithm&#125;</span></span></span><br></pre></td></tr></table></figure>
-<p>输出结果如下所示：</p>
-<p><a href="http://images.cnblogs.com/cnblogs_com/piags/201211/201211062021256132.jpg" target="_blank" rel="noopener"><img src="/../assets/pic/2020-06-12-LaTex%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB/201211062021275586.jpg" alt="未命名"></a></p>
-
+        
+          <a class="article-more-a" href="/2020/2020-06-12-LaTex学习汇总/#more">more >></a>
+        
       
 		<!-- 在这里添加版权内容-->
 		
@@ -584,11 +578,11 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">分布式</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">复习</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">复习</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">分布式</a>
         		</li>
       		
 		</ul>
@@ -678,11 +672,11 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">分布式</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">复习</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">复习</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">分布式</a>
         		</li>
       		
 		</ul>
@@ -1311,6 +1305,26 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">基础</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">复习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
@@ -1319,11 +1333,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+                <a href="javascript:void(0)" class="js-tag color3">面试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">web</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1343,18 +1369,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">面试</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">安装</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">摄影</a>
               </li>
              
@@ -1363,31 +1377,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">基础</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">复习</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">C</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">web</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">观点</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
