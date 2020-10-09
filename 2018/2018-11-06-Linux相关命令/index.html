@@ -6,14 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="">
-  <title>Linux相关命令 | 俗染心</title>
+  <title>Linux相关命令 | 雾林鹿</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Linux基础Linux 内核版本 内核（kernel）是系统的心脏，是运行程序和管理像磁盘和打印机等硬件设备的核心程序，它提供了一个在裸设备与应用程序间的抽象层，通常只有一份 Linux 内核版本又分为稳定版和开发版，两种版本是相互关联，相互循环 稳定版：具有工业级强度，可以广泛地应用和部署。新的稳定版相对于较旧的只是修正一些 bug 或加入一些新的驱动程序 开发版：由于要试验各种解决方案，所以">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux相关命令">
 <meta property="og:url" content="/2018/2018-11-06-Linux相关命令/index.html">
-<meta property="og:site_name" content="俗染心">
+<meta property="og:site_name" content="雾林鹿">
 <meta property="og:description" content="Linux基础Linux 内核版本 内核（kernel）是系统的心脏，是运行程序和管理像磁盘和打印机等硬件设备的核心程序，它提供了一个在裸设备与应用程序间的抽象层，通常只有一份 Linux 内核版本又分为稳定版和开发版，两种版本是相互关联，相互循环 稳定版：具有工业级强度，可以广泛地应用和部署。新的稳定版相对于较旧的只是修正一些 bug 或加入一些新的驱动程序 开发版：由于要试验各种解决方案，所以">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="/assets/pic/2018-11-06-Linux%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/bg2013081707.png">
@@ -24,13 +24,13 @@
 <meta property="og:image" content="/assets/pic/2018-11-06-Linux%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/003_su%E5%92%8Cexit%E7%A4%BA%E6%84%8F%E5%9B%BE.png">
 <meta property="og:image" content="/assets/pic/2018-11-06-Linux%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/vim-vi-workmodel.png">
 <meta property="og:image" content="/assets/pic/2018-11-06-Linux%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/vi-vim-cheat-sheet-sch.gif">
-<meta property="og:updated_time" content="2020-01-14T04:03:16.000Z">
+<meta property="og:updated_time" content="2020-08-02T08:09:43.538Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux相关命令">
 <meta name="twitter:description" content="Linux基础Linux 内核版本 内核（kernel）是系统的心脏，是运行程序和管理像磁盘和打印机等硬件设备的核心程序，它提供了一个在裸设备与应用程序间的抽象层，通常只有一份 Linux 内核版本又分为稳定版和开发版，两种版本是相互关联，相互循环 稳定版：具有工业级强度，可以广泛地应用和部署。新的稳定版相对于较旧的只是修正一些 bug 或加入一些新的驱动程序 开发版：由于要试验各种解决方案，所以">
 <meta name="twitter:image" content="/assets/pic/2018-11-06-Linux%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/bg2013081707.png">
   
-    <link rel="alternative" href="/atom.xml" title="俗染心" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="雾林鹿" type="application/atom+xml">
   
   
     <link rel="icon" href="/assets/img/f.ico">
@@ -70,7 +70,7 @@ var _hmt = _hmt || [];
 			<img src="/assets/img/touxiang.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">俗染心</a></h1>
+		  <h1 class="header-author"><a href="/">雾林鹿</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">常思己过，莫论人非</p>
@@ -128,7 +128,7 @@ var _hmt = _hmt || [];
 				<img src="/assets/img/touxiang.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">俗染心</h1>
+			  <h1 class="header-author js-header-author">雾林鹿</h1>
 			</hgroup>
 			
 			<p class="header-subtitle"><i class="icon icon-quo-left"></i>常思己过，莫论人非<i class="icon icon-quo-right"></i></p>
@@ -390,6 +390,8 @@ var _hmt = _hmt || [];
 <h5 id="shell-重定向"><a href="#shell-重定向" class="headerlink" title="shell 重定向"></a>shell 重定向</h5><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">一般情况下，每个 Unix/Linux 命令运行时都会打开三个文件：</span><br><span class="line">标准输入文件(stdin)：stdin的文件描述符为0，Unix程序默认从stdin读取数据。</span><br><span class="line">标准输出文件(stdout)：stdout 的文件描述符为1，Unix程序默认向stdout输出数据。</span><br><span class="line">标准错误文件(stderr)：stderr的文件描述符为2，Unix程序会向stderr流中写入错误信息</span><br><span class="line">    <span class="built_in">command</span> &gt; file	将输出重定向到 file。</span><br><span class="line">    <span class="built_in">command</span> &lt; file	将输入重定向到 file。</span><br><span class="line">    <span class="built_in">command</span> &gt;&gt; file	将输出以追加的方式重定向到 file。</span><br><span class="line">    n &gt; file	将文件描述符为 n 的文件重定向到 file。</span><br><span class="line">    n &gt;&gt; file	将文件描述符为 n 的文件以追加的方式重定向到 file。</span><br><span class="line">    n &gt;&amp; m	将输出文件 m 和 n 合并。</span><br><span class="line">    n &lt;&amp; m	将输入文件 m 和 n 合并。</span><br><span class="line">    &lt;&lt; tag	将开始标记 tag 和结束标记 tag 之间的内容作为输入。</span><br><span class="line">    如果希望将 stdout 和 stderr 合并后重定向到 file，可以这样写：</span><br><span class="line">	$ <span class="built_in">command</span> &gt; file 2&gt;&amp;1</span><br></pre></td></tr></table></figure>
 <h5 id="Shell-文件包含"><a href="#Shell-文件包含" class="headerlink" title="Shell 文件包含"></a>Shell 文件包含</h5><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">和其他语言一样，Shell 也可以包含外部脚本。这样可以很方便的封装一些公用的代码作为一个独立的文件。</span><br><span class="line"></span><br><span class="line">Shell 文件包含的语法格式如下：</span><br><span class="line">. filename   <span class="comment"># 注意点号(.)和文件名中间有一空格</span></span><br><span class="line">或</span><br><span class="line"><span class="built_in">source</span> filename</span><br><span class="line"></span><br><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment">#使用 . 号来引用test1.sh 文件</span></span><br><span class="line">. ./test1.sh</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或者使用以下包含文件代码</span></span><br><span class="line"><span class="comment"># source ./test1.sh</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"菜鸟教程官网地址：<span class="variable">$url</span>"</span></span><br></pre></td></tr></table></figure>
 <h4 id="SS搭建整理"><a href="#SS搭建整理" class="headerlink" title="SS搭建整理"></a>SS搭建整理</h4><h5 id="一键脚本"><a href="#一键脚本" class="headerlink" title="一键脚本"></a>一键脚本</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget — no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh</span><br><span class="line"></span><br><span class="line">chmod +x shadowsocks.sh</span><br><span class="line"></span><br><span class="line">./shadowsocks.sh 2&gt;&amp;1 | tee shadowsocks.log</span><br></pre></td></tr></table></figure>
+<p>V2ray</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ubuntu/debian 系统安装 Curl 方法: apt-get update -y &amp;&amp; apt-get install curl -y</span><br><span class="line">centos 系统安装 Curl 方法: yum update -y &amp;&amp; yum install curl -y</span><br><span class="line"></span><br><span class="line">bash &lt;(curl -s -L https://git.io/v2ray.sh)</span><br></pre></td></tr></table></figure>
 <h5 id="1-依次输入如下命令（输入-后的命令不输入-）："><a href="#1-依次输入如下命令（输入-后的命令不输入-）：" class="headerlink" title="1.依次输入如下命令（输入#后的命令不输入#）："></a>1.依次输入如下命令（输入#后的命令不输入#）：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apt-get update                              // 更新源中包列表</span><br><span class="line">apt-get install python-pip                  // 安装pip</span><br><span class="line">pip install --upgrade pip                   // 更新pip</span><br><span class="line">apt-get install git                         // 安装git</span><br><span class="line">pip install git+https://github.com/shadowsocks/shadowsocks.git@master   // 安装SS</span><br></pre></td></tr></table></figure>
 <!--more-->
 <h5 id="2-安装chacha20加密："><a href="#2-安装chacha20加密：" class="headerlink" title="2.安装chacha20加密："></a>2.安装chacha20加密：</h5><p>虽然shadowsocks的作者推荐使用<code>aes-256-cfb</code>的加密算法，但是这个算法对手机或者openwrt路由器的压力还是不小的，于是后来Google推出的<code>chacha20</code>算法因为其安全性和惊人的速度被现在更多人使用。</p>
@@ -453,7 +455,7 @@ div.article-footer-copyright {
 <br>
 <!-- 版权信息内容在这里 -->
 <div class="article-footer-copyright">
-本文作者：<b><a href="/index.html" target="_blank" title="俗染心">俗染心</a></b>，采用署名-非商业性使用-相同方式共享<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a>许可协议<br>
+本文作者：<b><a href="/index.html" target="_blank" title="雾林鹿">雾林鹿</a></b>，采用署名-非商业性使用-相同方式共享<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a>许可协议<br>
 本文标题：<b><a href="/2018/2018-11-06-Linux相关命令/" target="_blank" title="Linux相关命令">Linux相关命令</a></b>
 <br>
 本文链接：<b><a href="https://blog.syzhou.site/2018/2018-11-06-Linux相关命令/" target="_blank" title="Linux相关命令">https://blog.syzhou.site/2018/2018-11-06-Linux相关命令/</a></b>
@@ -688,7 +690,7 @@ div.article-footer-copyright {
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 俗染心
+    		&copy; 2020 雾林鹿
     	</div>
 		<span id="busuanzi_container_site_pv">
 			本站总访问量<span id="busuanzi_value_site_pv"></span>次
@@ -780,10 +782,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
@@ -792,15 +790,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">读书</a>
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">面试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -812,27 +810,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">安装</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">分布式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">论文</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">科研</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -844,11 +830,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">观点</a>
+                <a href="javascript:void(0)" class="js-tag color3">安装</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">观点</a>
               </li>
             
             <div class="clearfix"></div>
