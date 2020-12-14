@@ -6,30 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="">
-  <title>生活琐碎与叨叨 | 雾林鹿</title>
+  <title>刷题经验 | 雾林鹿</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言——记录的意义敢于审视内心的人，是值得尊敬的；善于思考人性的人，是充满智慧的 我不是，但需要变得是 懦弱的人总习惯把内心小人藏得很深，深到不敢触及，以至于淹没了曾经，尘封了经历与过往 虚假的人更会藏住内心的真实，表现出自己想成为的模样，最终也活不成别人眼中的自己 可如果与内心的小人说话，都是谎话，那记录，又有何意义？">
-<meta name="keywords" content="随笔">
+  <meta name="description" content="回溯回溯算法其实就是不断尝试的过程，一旦尝试成功了，就算成功了，如果尝试失败了还会回到上一步，注意回到上一步的时候还要把状态还原到上一步的状态。回溯算法这里就不在过多介绍，关于回溯算法的解题思路可以看下450，什么叫回溯算法，一看就会，一写就废。 回溯算法其实有一个经典的模板 12345678910111213141516171819private void backtrack(&amp;quot;原始参">
+<meta name="keywords" content="java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="生活琐碎与叨叨">
-<meta property="og:url" content="/2099/l_2099-01-01-生活琐碎与叨叨/index.html">
+<meta property="og:title" content="刷题经验">
+<meta property="og:url" content="/2020/2020-12-10-刷题经验/index.html">
 <meta property="og:site_name" content="雾林鹿">
-<meta property="og:description" content="前言——记录的意义敢于审视内心的人，是值得尊敬的；善于思考人性的人，是充满智慧的 我不是，但需要变得是 懦弱的人总习惯把内心小人藏得很深，深到不敢触及，以至于淹没了曾经，尘封了经历与过往 虚假的人更会藏住内心的真实，表现出自己想成为的模样，最终也活不成别人眼中的自己 可如果与内心的小人说话，都是谎话，那记录，又有何意义？">
+<meta property="og:description" content="回溯回溯算法其实就是不断尝试的过程，一旦尝试成功了，就算成功了，如果尝试失败了还会回到上一步，注意回到上一步的时候还要把状态还原到上一步的状态。回溯算法这里就不在过多介绍，关于回溯算法的解题思路可以看下450，什么叫回溯算法，一看就会，一写就废。 回溯算法其实有一个经典的模板 12345678910111213141516171819private void backtrack(&amp;quot;原始参">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="/assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/IMG_20180904_113513.jpg">
-<meta property="og:image" content="/assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/D3193A927A4099856506419D9ED0F6D9.jpg">
-<meta property="og:image" content="/assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/image-20200428220345142.png">
-<meta property="og:image" content="/assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/TIM%E5%9B%BE%E7%89%8720190907225825.jpg">
-<meta property="og:image" content="/assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/TIM%E5%9B%BE%E7%89%8720200428205153.jpg">
-<meta property="og:image" content="/assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/image-20200428210356049.png">
-<meta property="og:image" content="/assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/image-20200428210605883.png">
-<meta property="og:image" content="/assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/7b70d554bc1b25c6.jpg">
-<meta property="og:image" content="/assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/image-20200428215237823.png">
-<meta property="og:updated_time" content="2020-09-28T08:51:59.986Z">
+<meta property="og:updated_time" content="2020-12-14T02:53:32.281Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="生活琐碎与叨叨">
-<meta name="twitter:description" content="前言——记录的意义敢于审视内心的人，是值得尊敬的；善于思考人性的人，是充满智慧的 我不是，但需要变得是 懦弱的人总习惯把内心小人藏得很深，深到不敢触及，以至于淹没了曾经，尘封了经历与过往 虚假的人更会藏住内心的真实，表现出自己想成为的模样，最终也活不成别人眼中的自己 可如果与内心的小人说话，都是谎话，那记录，又有何意义？">
-<meta name="twitter:image" content="/assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/IMG_20180904_113513.jpg">
+<meta name="twitter:title" content="刷题经验">
+<meta name="twitter:description" content="回溯回溯算法其实就是不断尝试的过程，一旦尝试成功了，就算成功了，如果尝试失败了还会回到上一步，注意回到上一步的时候还要把状态还原到上一步的状态。回溯算法这里就不在过多介绍，关于回溯算法的解题思路可以看下450，什么叫回溯算法，一看就会，一写就废。 回溯算法其实有一个经典的模板 12345678910111213141516171819private void backtrack(&amp;quot;原始参">
   
     <link rel="alternative" href="/atom.xml" title="雾林鹿" type="application/atom+xml">
   
@@ -182,14 +172,14 @@ var _hmt = _hmt || [];
           </div>
           <div id="js-content" class="content-ll">
             
-<article id="post-l_2099-01-01-生活琐碎与叨叨" class="article article-type-post " itemscope="" itemprop="blogPost">
+<article id="post-2020-12-10-刷题经验" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">  
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      生活琐碎与叨叨
+      刷题经验
     </h1>
   
 	
@@ -200,140 +190,17 @@ var _hmt = _hmt || [];
 			</span>
 		
         
-        <a href="/2099/l_2099-01-01-生活琐碎与叨叨/" class="archive-article-date">
-  	<time datetime="2099-01-01T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2099-01-01</time>
+        <a href="/2020/2020-12-10-刷题经验/" class="archive-article-date">
+  	<time datetime="2020-12-10T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="前言——记录的意义"><a href="#前言——记录的意义" class="headerlink" title="前言——记录的意义"></a>前言——记录的意义</h4><p>敢于审视内心的人，是值得尊敬的；善于思考人性的人，是充满智慧的</p>
-<p>我不是，但需要变得是</p>
-<p>懦弱的人总习惯把内心小人藏得很深，深到不敢触及，以至于淹没了曾经，尘封了经历与过往</p>
-<p>虚假的人更会藏住内心的真实，表现出自己想成为的模样，最终也活不成别人眼中的自己</p>
-<p>可如果与内心的小人说话，都是谎话，那记录，又有何意义？</p>
-<a id="more"></a>
-<p>越长大，日记越是件难事</p>
-<p>因为生活琐碎，因为压力繁杂，因为心智成熟，也因为伪装久了，便下意识不去触及心中的小人了</p>
-<p>慢慢地我们漠然，啥也不问，啥也不想，啥也不恋，凡是过往，终将在生活的琐碎中忘却</p>
-<p>可我始终认为，我需要记录，需要记录真实的自己，记录自己生命中的成长与感悟，在记录过程中，督促自己思考与总结。人总是逃避思考，逃避与自己对话。孤独才是人生永恒的状态，而与自己和解，与自己相处，正是孤独成长中的不可或缺。</p>
-<p>也许多年以后，回顾自己写的东西，或许会觉得幼稚，或许会觉得不值一提，但这正是我自己亲身经历过的，它汇聚了我青春的成长与感悟，纵使凌乱繁杂，幼稚单调，但自有它存在的尊严与价值</p>
-<p>=======================================================================================</p>
-<p>此篇记录生活中的琐碎与叨叨，人生如逆旅，我亦是行人，在社会夹缝中求存的我们，历经苦难、艰辛与复杂。</p>
-<p>票圈繁杂，顾忌太多，博客少有关注，以此为树洞，记录自己的平凡，也见证自己的成长。</p>
-<p>=======================================================================================</p>
-<hr>
-<p>2020.02.11<br>我相信互联网上有很多和我一样正处于大学阶段的伙伴。我们初生牛犊不怕虎，我们在社会的边缘徘徊观望。我们拼命的试探着去融入这个社会，我们力量很薄弱，我们去搜寻了解各种各样的信息以求为未来铺路。正义的,我们欢呼高歌！邪恶的，我们信心大失，痛恨着自己无能为力。<br>我们深知我们唯一能做的就是不断的捧出那一次次的邪恶，想着他能够引起所有人的重视，从而解决。待到尘埃落佛，我们可以自豪的说，哈哈，我也出了分力！可当捧出的一次次不管用时，当我们越发地发现自己的力量多么卑微时，我们害怕啊！害怕终有一天我们也会成为受害者！害怕！终有一天我们也会融于邪恶。</p>
-<hr>
-<p>2020.02.07——父母的艰辛一生</p>
-<p>疫情日益严重，也有时间陪陪父母，和爸妈聊聊天，今天聊到了他们的一生，大起大落，兜兜转转，生活不易，且行且珍惜。<br>想我爸这些年，当过兵，掌过勺，开过厂，做过保安队长，搞过小餐饮，也出国包过工，最后安安稳稳，静待退休，兜兜转转，起起落落，虽不大富大贵，但勤劳善良，让我让家，能小富即安，能吃穿不愁，能安安稳稳，从一穷二白到四层楼房，从农村到城市，从一无所有到富足有余，这些年，让我从没为钱发过愁，时有余钱接济亲友，家庭亲友和睦，对我关爱有加。<br>回顾父母一生，回顾那个年代，赚钱养家真不易，改革，税款，国家粮，房子，户口，下岗潮，多不易，多艰难。<br>生活不易且珍惜，勤劳致富莫怠惰</p>
-<hr>
-<p>2019.06.23——毕业随笔</p>
-<p>四年尘埃落定，手握四菜一汤，顺利毕业～<br>大工软院，1503，江湖路远，道一声珍重，愿前程似锦，未来可期<br>这几天，重走了辅修路，逛遍了大连景，拍遍了软院楼，离别了旧时友</p>
-<p>望了最后一眼大连海，吃了最后一顿东北饭<br>大学四年，我经历，我见证，我成长</p>
-<p>在我一生的黄金时代，没有伤感，也少有遗憾，独少一张连理，久萦于心头，求之不得，得之不欢</p>
-<p>再见大工，再见软院，再见大连 </p>
-<p><img src="/../assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/IMG_20180904_113513.jpg" alt="IMG_20180904_113513"></p>
-<p><img src="/../assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/D3193A927A4099856506419D9ED0F6D9.jpg" alt="img"></p>
-<p><img src="/../assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/image-20200428220345142.png" alt="image-20200428220345142"></p>
-<hr>
-<p>2019-06.16——双学位有感</p>
-<p>毕业季临近，回顾总结了本科四年</p>
-<p>关于工商管理双学位，我经常自问，从中得到了什么</p>
-<p>为什么舍弃了三年的周末，早上5点多起床，坐三个小时校车去听课</p>
-<p>双学位有点苦，也少见成效</p>
-<p>我基本不可能靠双学位去成为一名高级经理，毕竟代码才是混生活的伎俩，码农搬砖才是生活基调<br>今天去本部拿学位证，与这群小伙伴聚了聚，聊了聊，发现坚持过后，都有所得</p>
-<p>其中有跨保清华经管者，有以此跨考成功者，有以此找上工作当上经理者，餐上所言，无不有所得<br>正如全明大哥说的<br>愿回首辅修岁月，道一声无怨无尤<br>致谢大家，致谢这群让我坚持下来的队友和老师!<br>江湖路远，相见亦难，愿前程似锦，未来可期～</p>
-<p><img src="/../assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/TIM%E5%9B%BE%E7%89%8720190907225825.jpg" alt="TIM图片20190907225825"></p>
-<p><img src="/../assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/TIM%E5%9B%BE%E7%89%8720200428205153.jpg" alt="TIM图片20200428205153"></p>
-<hr>
-<p>2019.04.18——生日叨叨</p>
-<p>又是一年生日，平凡而过，除了父母，也少有祝福。</p>
-<p>平静的实验室搬砖，平静的吃饭追番，连今晚校园醉晚亭的晚会，也未能惊起心底一丝波澜。</p>
-<p>平凡的生活一如往常，没有了往日的礼物，也没有祝福的大蛋糕。</p>
-<p>近些年，早已逃离朋友圈，少有知晓，少有打扰，也少有惦念!</p>
-<p>大学这两年，发现自己过的越来越孤独，习惯了一个人生活，习惯了一个人办事，习惯了处理身边的各种关系。</p>
-<p>往日里一起和尿捏泥的小伙伴，也都默默为着自己的前途奔波，渐渐害怕打扰，少了联系，也淡了想念。</p>
-<p>身边的关系都处的平淡，却也少了真真的知心人。</p>
-<p>这两年生日，皆是如此，平淡而平凡；今后的生活，或亦将如此，孤独平淡，无人打扰，少有挂念。</p>
-<p>孤独是一种与自己相处后的态度，是人生必须面对的精神依赖，愿我能在孤独中成长，在孤独中变强。</p>
-<p><img src="/../assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/image-20200428210356049.png" alt="image-20200428210356049"></p>
-<hr>
-<p>2018.12.10——偶遇交通事故</p>
-<p>打车回学校，在路上三车追尾相撞</p>
-<p>车速挺快，副驾驶大哥没系安全带，头撞碎了前玻璃，虽没流血，但起码也脑震荡</p>
-<p>我身体没事，只一点小插伤，劫后余生，跟司机说了声，就另外打了个车，回学校了</p>
-<p>整个事情，没和父母说，没和朋友提，怕他们担心，默默回学校，一如生活的往常</p>
-<p>这些年的报喜不报忧，这些年的苦难挫折，这些年了解的生活艰辛，这些年学会的沉默与包容，或许这就是成长吧</p>
-<hr>
-<p>2018.11.18——初探武汉生活</p>
-<p>四年飞逝，独自离家生活与求学，打卡了大连景色各地，却未曾领悟这座小城的唯美与适逸，也遗憾少了张连理；</p>
-<p>离开近一月，领略了武汉的喧嚣与地气，才发现，大学偏安处的闲适，小城里透过的那份安逸，也弥足珍惜。</p>
-<p><img src="/../assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/image-20200428210605883.png" alt="image-20200428210605883"></p>
-<hr>
-<p>2018.10.03——长山群岛游</p>
-<p>保研结束，忙里偷得一丝闲，便有了登群岛赶海，吃遍渔家的想法。说干就干，背上包，就来到了这块尚未完全旅游化的群岛，是群岛也是小镇，各岛养鱼为生，旅游为辅， 岛上随处海景房，出门就是沙滩，面朝大海，天清海阔。虽然国庆假期，这里却避开了人山人海，旅人稀少，悠闲自在，清爽惬意。</p>
-<p><img src="/../assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/7b70d554bc1b25c6.jpg" alt="7b70d554bc1b25c6"></p>
-<p>大学来，很久没有这么放松，大抵一个阶段结束，抛却一众烦恼，难得清闲，心情亦舒畅不少。</p>
-<p>出来玩，总会有些意外事件，但那又何妨？纵使乘车过站，亦可横跨大海，纵横两岛之间；纵使错过出港，亦能纵情山间，享受滨海风光；纵使深秋水冷，也敢下海博浪，感受海味咸凉；纵使海鲜闭市，也能啤酒下肚，豪取其中肥鲜。</p>
-<p>意外过后，总有惊喜，保研也是如此。跑遍了全国，历经了风浪，一次次意外，一次次心凉，想过逃避，也想过放弃，准备过工作，也决心过考研，好歹结局还行，是惊喜，终没让我失望。</p>
-<p>大学这几年，去过不少地方，但始终来去匆匆，匆匆打卡，又慌慌而归，没时间停留，缺少驻足，也少了细细的聆听。那一个个景点，似一个老态龙钟的老者，迎来了一批批前来换心情的游客，让他们带着相同的心情而归，只留下一张张打卡照和一如往常。</p>
-<p>这些年，我亦从未曾读懂过一个城市，包括承载了我四年青春的大连，也是如此匆匆而过，即将毕业，或许终将没有机会来驻足体会。</p>
-<p>但在这里，这个下午，我躺在岛边，听着澎湃的浪，吹着细徐的风，任思绪回荡，什么都去想，又什么都放，渐渐有所感，有了记录的欲望。</p>
-<p>当船收锚前行，是离港，也是起航，纵历经风浪，终到远方，那是岛与梦想。</p>
-<hr>
-<p>2018.07.11——毕业方向抉择与思考</p>
-<p>步入大三下学期，未褪去那份初入大学时的天真，保研就业考研等各种选择却接踵而至。面对各路神仙的嘲讽与吊打，面对各种牛逼院校与工作岗位的狂轰乱炸，从未好好抉择的我，难免动心，也难免迷茫。</p>
-<p>怕自己没能进入大佬的牛逼圈子，也怕自己做出后悔的选择。开学第一天，夜谈到了深夜两三点，也没能给出明确的选择。选择终究要自己做，我终究得对自己负责。</p>
-<p>以前中学时打架犯了大错，还记得老师问我为什么要努力学习？我楞然。</p>
-<p>她说，努力，是为了有更多的选择。现在，当面临着各种选择时，又茫然又退缩。</p>
-<p>我十分讨厌这种压在保研线上的感觉，这种薛定谔的状态，让我畏手畏脚</p>
-<p>找实习对我而言，说是为了多一种选择，其实是一种退路，我真的想工作吗？我真的能胜任工作吗？我真的有为实习准备过吗？</p>
-<p>现在才发现，其实老师那句话挺对的，努力，是为了有更多的选择。现在才后悔当初没能把成绩提上去，那些名列前茅的人，才是多了一种选择，那种Offer收割机，才有更多的选择。而我多的，只是那种不自信的不安全感，那种害怕失败状态下的无路可退。而我，只是为了在这种不安全感中，找到那种我还在努力的精神慰藉。</p>
-<p>台湾清华大学彭明辉教授的写过的一段话：“生命是一种长期而持续的累积过程，绝不会因为单一的事件而毁了一个人的一生，也不会因为单一的事件而救了一个人的一生。属于我们该得的，迟早会得到；属于我们不该得的，即使侥幸巧取也不可能长久保有。”</p>
-<p>选择不重要，重要的是那份选择过后的坚持，以及自身不断努力后能力的提升，而我能做的，就是远离投机，做好当下。</p>
-<hr>
-<p>2018.03.03——自律得自由</p>
-<p>以为自由就是想做啥做啥，后来才发现自律者才会有自由。当一个人缺乏自律的时候，他做的事情总是在受习惯和即时诱惑的影响，要么就是被他人思想观念所扰，要么就是无限的虚度空虚与无聊，几乎永远不可能去做内心真正渴望的事，一段时间后回首，发现所得寥寥，又陷入深深的自责与反省中，如此循环。</p>
-<p>自律并不是让一大堆规章制度来层层地束缚自己，而是用自律的行动创造一种井然的秩序来为我们的学习生活争取更大的自由。亦如康德所言：所谓自由，不是随心所欲，而是自我主宰。</p>
-<p>身边我认为比较强的人，都是比较自律的人，他们能很好的规划自己的生活，能做好自己的事，甚至不喜欢的事。所以他们有更多时间做他们喜欢的事，来获得满足感和成就感，而满足感和成就感，又能反过来推着他们自律。</p>
-<p>所以，才有了有些人每门课90+甚至95+，我自认为90+没什么，喜欢一门课，努力去学，认真对待也能拿到，但那些自律的人，门门课程95+，连军训体育亦不例外，这就不是单纯的喜欢了，而是源于他们的自律。同样也有这样一句话：身处清华北大，你会发现，总有那么一些人，把他们的兴趣，发展的比你的主业更好，这些人都是自律者，他们能很好的规划自己的生活，让自己有更多的选择，也得到了自律后的自由。</p>
-<p>正如有人说的：真正内心强大的人，能把不喜欢的事，做到极致。</p>
-<p>我不是一个自律的人，更不是一个自由的人，自律得自由，自由沁人心。</p>
-<hr>
-<p>2017.08.13——鞍山补课经历</p>
-<p>回顾这16天的生活，确实很辛苦很累，体味了一次人生的不易，生活的艰难，也真正意义上赚得了人生第一桶金，朝着人格独立的第一步——经济独立踏出了较为关键的一步。</p>
-<p>也是我第一次离开故乡，并非旅游的独自生活，也可以说是生存</p>
-<p>巨大的压力，艰苦的环境，加上备课的负担，还有学校项目的步步紧逼，各种DDL，让我差点没坚持下来。</p>
-<p>睡眠不足，上课辛苦，回想起来，整天除了上课，备课，就是找机会睡觉。这段经历，收获颇丰，感受了现行教育体制的不公及资源的严重不平衡，体会到了身处教育薄弱地区学生的奋进与无奈，回顾自己求学之路，感慨万分。</p>
-<p>但我感怀于学生们的努力</p>
-<p>感怀与他们对于高考的美好憧憬，感怀于他们12点依然不愿走的那份纯真，感怀于那份备战高考的艰辛岁月</p>
-<p>也让我体会到了另一种生活</p>
-<p>让我完成教师与学生的转换，让我肚中的墨汁没能烂在肚子里，也让我忆起了自己的高中，那份些少有的努力时光</p>
-<p>我也尽我所能，教出了自己的全部经验，问心无愧</p>
-<p>相信命运的天平会倾向努力的人，相信他们能担得起那份努力，受得住这份责任，扛得住这份孤独与黑暗</p>
-<p>让自己有一份更好的选择，有一片更好的天空。</p>
-<p>这16天，很苦，也很充实</p>
-<p>我深受他们的尊重，也深受你们的照顾，与你们一起，我看到了当初那个不服输的自己</p>
-<p>这段经历，充实感慨而快乐！</p>
-<hr>
-<p>2017.06.24——湖北高考作文有感</p>
-<p>以前我十分钦佩高考满分作文，钦佩那些考生们在有限的考试时间内充分展示出的哲思与文采，总会在紧张的考前细细品味，找出其中感人之处。</p>
-<p>至今任然记得那”思方行圆 止于至善”的哲辩；感慨那”左手烈酒 右手清茶”的洒脱；回味那”心有猛虎 细嗅蔷薇”的豪迈；欣赏那”上善若水任方圆”的怡然。</p>
-<p>然而，当湖北卷被全国卷取代，当湖北考生为了适应全国统考的安排，渐渐褪去了那份湖北特有的人文气息，失掉了荆楚少年那份朝气洒脱，少掉了那份对人情对乡土对真善美的思考，转向追求高而大、形而上、那份华而不实，不禁哗然。</p>
-<p>回顾备考时光，我总吐槽湖北卷的变态，吐槽那用乡土错字来折磨我们的字音字形；吐槽那直接放弃的数学压轴；吐槽那难到爆炸做不完的理综试卷；吐槽那九磅十五便士的英语听力。</p>
-<p>但年岁增长，经历了几年的大学时光，渐渐有了自己的思考，我开始感谢我的高考，感谢当年折磨我到死的湖北卷。感谢那些开放自由的阅读理解，让我冲破题目的限制，学会带着思考去阅读；感谢那些变态难懂的数学题，让我静下心去论证解答，给我打下了坚实基础；感谢那晦涩难懂的理综，让我体会到了争分夺秒的可贵；感谢那老师不交全靠刷题的英语，让我接触到了自学魅力，受用至今，成就了我知识的巅峰。</p>
-<hr>
-<p>2017.05.06——海贝晚霞</p>
-<p>我喜欢独自去傍晚的海边，享受那海风徐徐，望着那抹残红没入远方的海港，任思绪回荡，什么都想，又什么都放，与孤岛对望，渐渐同海天和渔舟笼上一抹淡淡的黑，插上耳机，坐在车边，看路边繁华点点，霓虹现现。</p>
-<p><img src="/../assets/pic/l_2099-01-01-%E7%94%9F%E6%B4%BB%E7%90%90%E7%A2%8E%E4%B8%8E%E5%8F%A8%E5%8F%A8/image-20200428215237823.png" alt="image-20200428215237823"></p>
-<hr>
-<p>2016.01.01——大一元旦</p>
-<p>经历了高考的迷茫，熬过了等成绩的紧张，混过了那个疯狂的暑假，度过了离别的惆怅，迎来了初入大学的向往。</p>
-<p>2015是注定不平凡的一年，这一年，我成年，这是一份责任，也包含自己成长的担当，我将独自收拾好行囊，远走他乡。这一年，有苦有累，有舍有得，注定是生命中最精彩的一年，从此高考就是那年，从此，我们就是那年，从此，故乡只有冬夏，再无春秋。</p>
-<p>2016新的一年，新的起点，新的希望，愿我担负起成年的责任，走在新的路上。</p>
-<hr>
+        <h5 id="回溯"><a href="#回溯" class="headerlink" title="回溯"></a>回溯</h5><p>回溯算法其实就是不断尝试的过程，一旦尝试成功了，就算成功了，如果尝试失败了还会回到上一步，注意回到上一步的时候还要把状态还原到上一步的状态。回溯算法这里就不在过多介绍，关于回溯算法的解题思路可以看下450，什么叫回溯算法，一看就会，一写就废。</p>
+<p>回溯算法其实有一个经典的模板</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">private void backtrack(&quot;原始参数&quot;) &#123;</span><br><span class="line">    //终止条件(递归必须要有终止条件)</span><br><span class="line">    if (&quot;终止条件&quot;) &#123;</span><br><span class="line">        //一些逻辑操作（可有可无，视情况而定）</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    for (int i = &quot;for循环开始的参数&quot;; i &lt; &quot;for循环结束的参数&quot;; i++) &#123;</span><br><span class="line">        //一些逻辑操作（可有可无，视情况而定）</span><br><span class="line"></span><br><span class="line">        //做出选择</span><br><span class="line"></span><br><span class="line">        //递归</span><br><span class="line">        backtrack(&quot;新的参数&quot;);</span><br><span class="line">        //一些逻辑操作（可有可无，视情况而定）</span><br><span class="line"></span><br><span class="line">        //撤销选择</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
 		<!-- 在这里添加版权内容-->
@@ -367,9 +234,9 @@ div.article-footer-copyright {
 <!-- 版权信息内容在这里 -->
 <div class="article-footer-copyright">
 本文作者：<b><a href="/index.html" target="_blank" title="雾林鹿">雾林鹿</a></b>，采用署名-非商业性使用-相同方式共享<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a>许可协议<br>
-本文标题：<b><a href="/2099/l_2099-01-01-生活琐碎与叨叨/" target="_blank" title="生活琐碎与叨叨">生活琐碎与叨叨</a></b>
+本文标题：<b><a href="/2020/2020-12-10-刷题经验/" target="_blank" title="刷题经验">刷题经验</a></b>
 <br>
-本文链接：<b><a href="https://blog.syzhou.site/2099/l_2099-01-01-生活琐碎与叨叨/" target="_blank" title="生活琐碎与叨叨">https://blog.syzhou.site/2099/l_2099-01-01-生活琐碎与叨叨/</a></b>
+本文链接：<b><a href="https://blog.syzhou.site/2020/2020-12-10-刷题经验/" target="_blank" title="刷题经验">https://blog.syzhou.site/2020/2020-12-10-刷题经验/</a></b>
 </div>
 <! -- 添加版权信息 -->
 		
@@ -415,7 +282,7 @@ div.article-footer-copyright {
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
         		</li>
       		
 		</ul>
@@ -427,7 +294,7 @@ div.article-footer-copyright {
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/thinking//" class="article-tag-list-link color5">生活随笔</a>
+        			<a href="/categories/learning//" class="article-tag-list-link color5">技术学习</a>
         		</li>
       		
 		</ul>
@@ -482,7 +349,7 @@ div.article-footer-copyright {
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://bshare.optimix.asia/barCode?site=weixin&url=http:/2099/l_2099-01-01-生活琐碎与叨叨/" alt="微信分享二维码">
+      <img src="http://bshare.optimix.asia/barCode?site=weixin&url=http:/2020/2020-12-10-刷题经验/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -496,18 +363,18 @@ div.article-footer-copyright {
   
 <nav id="article-nav">
   
-    <a href="/2099/l_2099-12-12-关于我和这个博客/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2099/l_2099-01-01-生活琐碎与叨叨/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          关于我和这个博客
+          生活琐碎与叨叨
         
       </div>
     </a>
   
   
-    <a href="/2020/2020-12-10-刷题经验/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">刷题经验</div>
+    <a href="/2020/2019-07-18-python开源基础复习整理/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -534,7 +401,7 @@ div.article-footer-copyright {
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#前言——记录的意义"><span class="toc-number">1.</span> <span class="toc-text">前言——记录的意义</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#回溯"><span class="toc-number">1.</span> <span class="toc-text">回溯</span></a></li></ol>
                     </div>
                 </span>
             </div>
