@@ -17,7 +17,7 @@
 <meta property="og:description" content="文件分布式存储系统小学期JavaSE大作业，编写程序实现文件的分布式云存储。要求云端加密，多节点备份，负载均衡，节点监控，错误恢复等机制。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210619223942.png">
-<meta property="og:updated_time" content="2021-06-19T14:44:10.174Z">
+<meta property="og:updated_time" content="2022-01-06T15:55:47.570Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="项目之基于Java原生Sockets的分布式文件存储系统">
 <meta name="twitter:description" content="文件分布式存储系统小学期JavaSE大作业，编写程序实现文件的分布式云存储。要求云端加密，多节点备份，负载均衡，节点监控，错误恢复等机制。">
@@ -219,7 +219,7 @@ var _hmt = _hmt || [];
 <li>多个StorageNode应用，提供文件的存储能力。提供向备份节点服务器进行文件备份功能。</li>
 <li>一个监控程序，不会swing,用的C#编写。</li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210619223942.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210619223942.png" alt></p>
 <p><strong>StorageNode应用程序</strong>提供文件的网络存储能力，在每个拥有硬盘文件存储能力的服务器节点上运行该程序。 该应用程序读取运行文件夹下的名称为storage*.properties 文件，该文件的内容如下： NodeName=aName NodeIP=ip address NodePort=aPort RootFolder=aFolder Volume=100GB FileServerIP=file server ip address FileServerPort=file server port</p>
 <p>NodeName属性，存储节点的名称，命名要求唯一，例如Node1, Node2, Node3, Node4, … 在大作业检查时，至少要启动4个存储节点进程。在运行过程中，还需要动态启动Node5, Node6两个进程，进行动态的存储扩展。 还需要在运行过程中动态的将一个节点关闭掉。NodeIP地址，由于没有多台计算机，所以NodeIP属性都设置为127.0.0.1 但是每个节点的端口不能设置为同一个，可以设置为8001， 8002， 8003， 8004， … 文件夹也需要创建不同的文件夹，例如在某个文件夹下设置node1, node2, node3, node4这样的子文件夹。将这些文件夹设置为存储节点的根文件夹。</p>
 <p>StorageNode需要知道FileServer服务器的地址信息，FileServerIP和FileServerPort就是UDP协议使用的地址和端口。 RootFolder就是存储节点服务器存放客户端上传文件的文件夹，Volume是该存储节点提供的最大存储能力。单位是MB, GB</p>
@@ -588,43 +588,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Code</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">摄影</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">金融</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">复习</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">观点</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">网安</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -632,7 +596,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">C</a>
+                <a href="javascript:void(0)" class="js-tag color3">复习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -644,11 +612,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">web</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -661,6 +637,26 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">分布式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Code</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">摄影</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">金融</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">观点</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
