@@ -1,4 +1,4 @@
-language: node_js # 设置语言
+language: node_js # 设置语言1
 node_js: stable # 设置相应版本
 cache:
     apt: true
