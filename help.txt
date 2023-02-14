@@ -1,0 +1,13 @@
+重装系统要新生成public key 并添加
+安装nodejs
+
+使用npm命令安装Hexo，输入：
+npm install -g hexo-cli 
+
+删除node_modules
+把稳定版本的package.json和package-lock.json复制到当前文件夹并覆盖
+npm install
+
+
+hexo g
+hexo d
