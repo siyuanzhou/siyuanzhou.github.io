@@ -1,0 +1,10 @@
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+
+
+Sitemap: http://blog.syzhou.site/sitemap.xml
+Sitemap: http://blog.syzhou.site/baidusitemap.xml
