@@ -19,7 +19,7 @@
 <meta property="og:image" content="/D:/%E9%BB%91%E9%A9%AC%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A2/00_Java%E8%AE%B2%E4%B9%89/17%20Docker%E5%AE%B9%E5%99%A8%E5%8C%96/%E8%AE%B2%E4%B9%89/image/1-1(1">
 <meta property="og:image" content="https://i.loli.net/2021/08/24/YXo3Tvbz7HR9ysg.png">
 <meta property="og:image" content="https://i.loli.net/2021/08/24/YdZHIuaACSjkge3.png">
-<meta property="og:updated_time" content="2022-01-06T15:56:31.000Z">
+<meta property="og:updated_time" content="2023-07-18T13:26:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker基础知识">
 <meta name="twitter:description" content="概述虚拟化（英语：Virtualization）是一种资源管理技术，是将计算机的各种实体资源，如服务器、网络、内存及存储等，予以抽象、转换后呈现出来，打破实体结构间的不可切割的障碍，使用户可以比原本的组态更好的方式来应用这些资源。">
@@ -217,7 +217,7 @@ var _hmt = _hmt || [];
 <p>（4）鼓励使用面向服务的架构</p>
 <p>Docker还鼓励面向服务的体系结构和微服务架构。Docker推荐单个容器只运行一个应用程序或进程，这样就形成了一个分布式的应用程序模型，在这种模型下，应用程序或者服务都可以表示为一系列内部互联的容器，从而使分布式部署应用程序，扩展或调试应用程序都变得非常简单，同时也提高了程序的内省性。（当然，可以在一个容器中运行多个应用程序）</p>
 <p>下面的图片比较了 <strong>Docker 和传统虚拟化方式的不同之处</strong>，可见容器是在操作系统层面上实现虚拟化，直接复用本地主机的操作系统，而传统方式则是在硬件层面实现。与传统的虚拟机相比，Docker优势体现为启动速度快、占用体积小。</p>
-<p><img src="/D:/%E9%BB%91%E9%A9%AC%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A2/00_Java%E8%AE%B2%E4%B9%89/17%20Docker%E5%AE%B9%E5%99%A8%E5%8C%96/%E8%AE%B2%E4%B9%89/image/1-1(1" alt="1-1(https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2018-07-04-Docker%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/1-1(1).png)">.png)</p>
+<p><img src="/D:/%E9%BB%91%E9%A9%AC%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A2/00_Java%E8%AE%B2%E4%B9%89/17%20Docker%E5%AE%B9%E5%99%A8%E5%8C%96/%E8%AE%B2%E4%B9%89/image/1-1(1" alt="1-1(https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/pic/2018-07-04-Docker%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/1-1(1).png)">.png)</p>
 <h4 id="Docker-组件"><a href="#Docker-组件" class="headerlink" title="Docker 组件"></a>Docker 组件</h4><h5 id="Docker服务器与客户端"><a href="#Docker服务器与客户端" class="headerlink" title="Docker服务器与客户端"></a>Docker服务器与客户端</h5><p>Docker是一个客户端-服务器（C/S）架构程序。Docker客户端只需要向Docker服务器或者守护进程发出请求，服务器或者守护进程将完成所有工作并返回结果。Docker提供了一个命令行工具Docker以及一整套RESTful API。你可以在同一台宿主机上运行Docker守护进程和客户端，也可以从本地的Docker客户端连接到运行在另一台宿主机上的远程Docker守护进程。</p>
 <p><img src="https://i.loli.net/2021/08/24/YXo3Tvbz7HR9ysg.png" alt="1-2"></p>
 <h5 id="Docker镜像（Image）与容器（Container）"><a href="#Docker镜像（Image）与容器（Container）" class="headerlink" title="Docker镜像（Image）与容器（Container）"></a>Docker镜像<strong>（Image）</strong>与容器<strong>（Container）</strong></h5><ul>

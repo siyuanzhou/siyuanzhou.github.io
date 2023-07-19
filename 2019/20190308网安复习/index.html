@@ -6,38 +6,53 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href>
-  <title>环境安装及相关配置 | 既白</title>
+  <title>网安复习 | 既白</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="生产力脚本">
-<meta name="keywords" content="python,安装">
+  <meta name="description" content="网安整个课就三个部分：对称密码，非对称密码，和几种安全服务(消息认证，数字签名，认证，证书等等都是为了安全服务)">
+<meta name="keywords" content="基础,复习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="环境安装及相关配置">
-<meta property="og:url" content="/2019/20190717环境安装及相关配置/index.html">
+<meta property="og:title" content="网安复习">
+<meta property="og:url" content="/2019/20190308网安复习/index.html">
 <meta property="og:site_name" content="既白">
-<meta property="og:description" content="生产力脚本">
+<meta property="og:description" content="网安整个课就三个部分：对称密码，非对称密码，和几种安全服务(消息认证，数字签名，认证，证书等等都是为了安全服务)">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/20190826092235717.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/20190826092143470.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/20190826092426972.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113225102250.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113225257439.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113225720493.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113225542262.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113231019660.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113231317736.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113231553334.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113232934378.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113235245900.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113235303581.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/823984-20190618193944359-723991337.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/20180909152602325.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/20180909152633430.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200428101724458.png">
-<meta property="og:updated_time" content="2022-01-06T15:57:08.000Z">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211633.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211634.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211635.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211636.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211637.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211638.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211639.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211640.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211641.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211642.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211643.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211644.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211645.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211646.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211647.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211648.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211649.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211650.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211651.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211652.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211653.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211654.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211655.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211656.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211657.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211658.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211659.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211700.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211701.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211702.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211703.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211704.png">
+<meta property="og:updated_time" content="2023-07-18T14:00:59.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="环境安装及相关配置">
-<meta name="twitter:description" content="生产力脚本">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/20190826092235717.png">
+<meta name="twitter:title" content="网安复习">
+<meta name="twitter:description" content="网安整个课就三个部分：对称密码，非对称密码，和几种安全服务(消息认证，数字签名，认证，证书等等都是为了安全服务)">
+<meta name="twitter:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211633.png">
   
     <link rel="alternative" href="/atom.xml" title="既白" type="application/atom+xml">
   
@@ -190,14 +205,14 @@ var _hmt = _hmt || [];
           </div>
           <div id="js-content" class="content-ll">
             
-<article id="post-20190717环境安装及相关配置" class="article article-type-post " itemscope itemprop="blogPost">
+<article id="post-20190308网安复习" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">  
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      环境安装及相关配置
+      网安复习
     </h1>
   
 	
@@ -208,119 +223,374 @@ var _hmt = _hmt || [];
 			</span>
 		
         
-        <a href="/2019/20190717环境安装及相关配置/" class="archive-article-date">
-  	<time datetime="2019-07-17T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-17</time>
+        <a href="/2019/20190308网安复习/" class="archive-article-date">
+  	<time datetime="2019-03-09T02:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="生产力脚本"><a href="#生产力脚本" class="headerlink" title="生产力脚本"></a>生产力脚本</h4><a id="more"></a>
-<h5 id="UTF-8-with-BOM-与UTF-8相互转换"><a href="#UTF-8-with-BOM-与UTF-8相互转换" class="headerlink" title="UTF-8(with BOM)与UTF-8相互转换"></a>UTF-8(with BOM)与UTF-8相互转换</h5><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment">#将UTF-8带BOM编码的文件转化为UTF-8无BOM格式</span></span><br><span class="line"><span class="keyword">if</span> [[ -z <span class="string">"<span class="variable">$1</span>"</span> ]];<span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'用法：./rmbom.sh [folder | file]'</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'将UTF-8编码的文件转化为UTF-8无BOM格式'</span></span><br><span class="line">    <span class="built_in">exit</span> 1</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line">path=<span class="variable">$1</span></span><br><span class="line">find <span class="variable">$path</span> -<span class="built_in">type</span> f -name <span class="string">"*"</span> -<span class="built_in">print</span> | xargs -i sed -i <span class="string">'1 s/^\xef\xbb\xbf//'</span> &#123;&#125;</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Convert finish"</span></span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">UTF-8无BOM转UTF-8带BOM：</span><br><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment">#将UTF-8无BOM编码的文件转化为UTF-8带BOM格式 </span></span><br><span class="line"><span class="keyword">if</span> [[ -z <span class="string">"<span class="variable">$1</span>"</span> ]];<span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'用法：./addbom.sh [folder | file]'</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'将UTF-8无BOM格式编码的文件转化为UTF-8带BOM'</span></span><br><span class="line">    <span class="built_in">exit</span> 1</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line">path=<span class="variable">$1</span></span><br><span class="line">find <span class="variable">$path</span> -<span class="built_in">type</span> f -name <span class="string">"*"</span> -<span class="built_in">print</span> | xargs -i sed -i <span class="string">'1 s/^/\xef\xbb\xbf&amp;/'</span> &#123;&#125;</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Convert finish"</span></span><br></pre></td></tr></table></figure>
-<h4 id="anaconda"><a href="#anaconda" class="headerlink" title="anaconda"></a>anaconda</h4><p>最好用conda install，不行就pip install，再不行就到官网自己下载第三方库</p>
-<h5 id="虚拟环境管理"><a href="#虚拟环境管理" class="headerlink" title="虚拟环境管理"></a>虚拟环境管理</h5><p>查看当前存在的虚拟环境：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda info --envs</span><br><span class="line">conda info -e</span><br></pre></td></tr></table></figure>
-<p><strong>创建虚拟环境</strong>，指定环境名称为tensorflow，python版本为python2.7（如果本机内没有安装这个版本的python，就会自动下载安装），创建的虚拟环境路径一般为F:\Anaconda2\envs</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n tensorflow python=3.5</span><br></pre></td></tr></table></figure>
-<p><strong>激活虚拟环境</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">activate tensorflow</span><br></pre></td></tr></table></figure>
-<p><strong>退出虚拟环境</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda deactivate tensorflow</span><br></pre></td></tr></table></figure>
-<p><strong>移除虚拟环境</strong><br>使用命令conda remove -n your_env_name(虚拟环境名称) –all， 即可删除。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda remove -n tensorflow --all</span><br></pre></td></tr></table></figure>
-<p><strong>导入导出</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip freeze &gt; requirements.txt</span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
-<p><strong>安装卸载包</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">conda list</span><br><span class="line">conda update xxx   #更新xxx文件包</span><br><span class="line">conda uninstall xxx   #卸载xxx文件包</span><br><span class="line">pip uninstall xxx</span><br><span class="line"></span><br><span class="line">pip install &lt;包名&gt; </span><br><span class="line">python -m pip install --upgrade pip</span><br><span class="line"># pip 两种均可</span><br><span class="line">pip install --upgrade &lt;包名&gt; </span><br><span class="line">pip install -U &lt;包名&gt; </span><br><span class="line"></span><br><span class="line">批量更新</span><br><span class="line">conda update --all</span><br><span class="line">pip  install --upgrade xxx</span><br></pre></td></tr></table></figure>
-<h5 id="清理anaconda缓存"><a href="#清理anaconda缓存" class="headerlink" title="清理anaconda缓存"></a>清理anaconda缓存</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda clean -p      <span class="comment"># 删除没有用的包 --packages</span></span><br><span class="line">conda clean -t      <span class="comment"># 删除tar打包 --tarballs</span></span><br><span class="line">conda clean -y -all <span class="comment"># 删除所有的安装包及cache(索引缓存、锁定文件、未使用过的包和tar包)</span></span><br></pre></td></tr></table></figure>
-<p><strong>在pycharm中使用虚拟环境</strong></p>
-<p>File-&gt;setting-&gt;Project:XXXX-&gt;Project Interperter<br>可以新建一个，也可以选择上面所创建的虚拟环境。</p>
-<h5 id="jupyter-notebook默认工作目录设置"><a href="#jupyter-notebook默认工作目录设置" class="headerlink" title="jupyter notebook默认工作目录设置"></a><strong>jupyter notebook默认工作目录设置</strong></h5><p>1）在Anaconda Prompt终端中输入下面命令，查看你的notebook配置文件在哪里：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">jupyter notebook --generate-config</span><br><span class="line"></span><br><span class="line"># 会生成文件C:\Users\用户\.jupyter\jupyter_notebook_config.py</span><br></pre></td></tr></table></figure>
-<p>2）打开jupyter_notebook_config.py文件通过搜索关键词：c.NotebookApp.notebook_dir，修改如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c.NotebookApp.notebook_dir = &apos;E:\\tf_models&apos;     //修改到自定义文件夹</span><br></pre></td></tr></table></figure>
-<p>3）然后重启notebook服务器就可以了</p>
-<h5 id="添加了新的conda环境"><a href="#添加了新的conda环境" class="headerlink" title="添加了新的conda环境"></a>添加了新的conda环境</h5><p>需要在新环境下使用jupyter notebook,解决：</p>
-<p>1.激活conda环境</p>
-<blockquote>
-<p>source activate your_env_name</p>
+        <h3 id="网安"><a href="#网安" class="headerlink" title="网安"></a>网安</h3><p>整个课就三个部分：对称密码，非对称密码，和几种安全服务(消息认证，数字签名，认证，证书等等都是为了安全服务)</p>
+<a id="more"></a>
+<h4 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h4><h5 id="安全服务"><a href="#安全服务" class="headerlink" title="安全服务"></a>安全服务</h5><blockquote>
+<p>RFC2828中定义的，是一种由系统提供的对系统资源进行特殊保护的处理或通信服务，安全服务通过安全机制来实现安全策略。</p>
+<p>ITU-T（即X.800）定义了五种服务：【身份认证】、【访问控制】、【数据保密】、【数据完整性】、【不可否认】</p>
 </blockquote>
-<p>2.安装ipykernel</p>
-<blockquote>
-<p>conda install ipykernel  </p>
+<ul>
+<li>【身份认证】：认证发送方和接收方的身份（对等实体身份认证）确保通信实体是合法和真实的</li>
+<li>【访问控制】：保护信息免于被未经授权的实体访问</li>
+<li>【数据机密性】：保护数据免于非授权泄露，并防止流量分析</li>
+<li>【数据完整性】：确保接收到的数据是由授权用户发出的或者是未被修改过的</li>
+<li>【不可否认性】：防止通信方对通信行为的否认，包括源不可否认性和宿不可否认性</li>
+<li>Availiable Service: 系统或系统资源能够按照要求根据系统性能规范被授权访问和使用</li>
+</ul>
+<h5 id="安全机制"><a href="#安全机制" class="headerlink" title="安全机制"></a>安全机制</h5><blockquote>
+<p>安全机制是用来检测、防止安全攻击，或从安全攻击中恢复的机制。单一的安全机制不能保证所需的所有安全服务。最重要的安全机制之一就是密码编码规则（重点）</p>
 </blockquote>
-<p>3.将环境写入notebook的kernel中</p>
+<ul>
+<li>加密：隐藏或覆盖信息以使其具有机密性。</li>
+<li>完整性：消息后面附加于一个短的键值。接收方接收信息和键值，再从接收的信息中创建一个新的键值，并把新创建的键值和原来的进行比较，如果两个键值相同，则说明数据的完整性被保全。==举个栗子==比如我发个消息，除了消息本身以外还发了一个消息的总长度，然后发出去了。接收方先收到消息，然后计算一下消息的总长度，和他收到的总长度对比，如果一样，就说明信息完整性被破坏的可能性不高。</li>
+<li>数字签名：信息发送方可以对信息进行电子签名，信息接收方可以对签名进行电子校验。</li>
+<li>身份认证交换：两个实体交换信息以互相证明身份，比如一方可以证明只有另一方才知道的小秘密。</li>
+<li>流量填充：指在数据流中嵌入一些虚假信息，阻止对手企图使用流量分析。</li>
+<li>路由控制：指在发送方和接收方之间选择并【不断改变有效路由】，以避免对手在特定的路由上偷听。</li>
+<li>公证：找一个可靠的第三方控制双方通信。</li>
+<li>访问控制：用各种方法，证明某个用户具有访问该信息或该系统所拥有的资源的权力。</li>
+</ul>
+<p>安全服务可以由一些安全机制去实现，例如：</p>
+<table>
+<thead>
+<tr>
+<th>安全服务</th>
+<th>安全机制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>信息机密性</td>
+<td>加密和路由控制</td>
+</tr>
+<tr>
+<td>信息完整性</td>
+<td>加密、数字签名、信息完整性</td>
+</tr>
+<tr>
+<td>身份认证</td>
+<td>加密、数字签名</td>
+</tr>
+<tr>
+<td>不可否认性</td>
+<td>数字签名、信息完整性和公证</td>
+</tr>
+<tr>
+<td>访问控制</td>
+<td>访问控制机制</td>
+</tr>
+</tbody>
+</table>
+<h5 id="对安全的攻击"><a href="#对安全的攻击" class="headerlink" title="对安全的攻击"></a>对安全的攻击</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Interruption: 对availability的攻击</span><br><span class="line">Interception: 对confidentiality的攻击</span><br><span class="line">Modification: 对integrity的攻击</span><br><span class="line">Fabrication: 对authenticity的攻击</span><br></pre></td></tr></table></figure>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211633.png" alt="1574576554598"></p>
+<h5 id="主动攻击和被动攻击"><a href="#主动攻击和被动攻击" class="headerlink" title="主动攻击和被动攻击"></a>主动攻击和被动攻击</h5><p>被动攻击：对传输进行窃听和监测，通信和信息不受影响，用户感觉不到攻击存在，攻击通常是窃听或流量分析，判断通信性质</p>
+<p>主动攻击：攻击者破坏通信过程，拦截、修改、伪造、丢弃信息、拒绝服务或假冒合法用户</p>
+<h5 id="简单加密系统模型"><a href="#简单加密系统模型" class="headerlink" title="简单加密系统模型"></a>简单加密系统模型</h5><p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211634.png" alt="1574576797543"></p>
+<h5 id="理论安全和实际安全"><a href="#理论安全和实际安全" class="headerlink" title="理论安全和实际安全"></a>理论安全和实际安全</h5><p>理论安全，或无条件安全Theoretical Secure (or Perfect Secure)：攻击者无论截获多少密文，都无法得到足够的信息来唯一地决定明文。Shannon用理论证明：欲达理论安全，加密密钥长度必须大于等于明文长度，密钥只用一次，用完即丢，即一次一密，One-time Pad，不实用。</p>
+<p>实际安全，或计算上安全Practical Secure (or Computationally Secure)：如果攻击者拥有无限资源，任何密码系统都是可以被破译的；但是，在有限的资源范围内，攻击者都不能通过系统的分析方法来破解系统，则称这个系统是计算上安全的或破译这个系统是计算上不可行(Computationally Infeasible)。 </p>
+<h5 id="对称密码体制和非对称密码体制"><a href="#对称密码体制和非对称密码体制" class="headerlink" title="对称密码体制和非对称密码体制"></a>对称密码体制和非对称密码体制</h5><p>对称密码体制(Symmetric System, One-key System, Secret-key System)：加密密钥和解密密钥相同，或者一个密钥可以从另一个导出，能加密就能解密，加密能力和解密能力是结合在一起的，开放性差。</p>
+<p>非对称密码体制(Asymmetric System, Two-key System, Public-key System)： 加密密钥和解密密钥不相同，从一个密钥导出另一个密钥是计算上不可行的，加密能力和解密能力是分开的，开放性好。</p>
+<h5 id="序列密码体制和分组密码体制"><a href="#序列密码体制和分组密码体制" class="headerlink" title="序列密码体制和分组密码体制"></a>序列密码体制和分组密码体制</h5><p>序列密码：如果密文不仅与最初给定的算法和密钥有关，同时也与明文位置有关(是所处位置的函数)，则称为序列密码体制。加密以明文比特为单位，以伪随机序列与明文序列模2加后，作为密文序列。</p>
+<p>分组密码：如果经过加密所得到的密文仅与给定的密码算法和密钥有关，与被处理的明文数据在整个明文中的位置无关，则称为分组密码体制。通常以大于等于64位的数据块为单位，加密得相同长度的密文。</p>
+<h5 id="确定型密码体制和概率密码体制"><a href="#确定型密码体制和概率密码体制" class="headerlink" title="确定型密码体制和概率密码体制"></a>确定型密码体制和概率密码体制</h5><p>确定型：当明文和密钥确定后，密文也就唯一地确定了。</p>
+<p>概率型：当明文和密钥确定后，密文通过客观随机因素从一个密文集合中产生，密文形式不确定，称为概率型密码体制。</p>
+<h5 id="单向函数型密码体制和双向变换型密码体制"><a href="#单向函数型密码体制和双向变换型密码体制" class="headerlink" title="单向函数型密码体制和双向变换型密码体制"></a>单向函数型密码体制和双向变换型密码体制</h5><p>单向函数型密码体制适用于不需要解密的场合，容易将明文加密成密文，如哈希函数；</p>
+<p>双向变换型密码体制可以进行可逆的加密、解密变换。</p>
+<h5 id="confusion和diffusion-混淆和扩散"><a href="#confusion和diffusion-混淆和扩散" class="headerlink" title="confusion和diffusion(混淆和扩散)"></a>confusion和diffusion(混淆和扩散)</h5><p>Shannon认为，为了对付基于统计分析的密码破译，必须对明文作confusion(混淆)和diffusion(扩散)处理，以减少密文的统计特性，为统计分析制造障碍。</p>
+<p>diffusion ——明文统计结构扩散消失到大批密文统计特性中，使明文和密文之间统计关系尽量复杂；</p>
+<p>confusion ——混淆，使密文和加密密钥之间的关系尽量复杂。</p>
+<h5 id="现代密码学基本原则及理论"><a href="#现代密码学基本原则及理论" class="headerlink" title="现代密码学基本原则及理论"></a>现代密码学基本原则及理论</h5><p>设计加密系统时，总是假定密码算法是可以 公开的，需要保密的是密钥。一个密码系统的安全性不在算法的保密，而在于密钥。</p>
+<p>对称加密系统的五个组成部分：明文、加密算法、密钥、密文、解密算法</p>
+<p>所有加密算法都基于两个原理： 代替和置换。代替是将明文中的每个元素映射成另一个元素，置换是将明文元素重新排列。</p>
+<p>密码攻击的两种方式：密码分析学攻击(差分分析和线性分析)和穷举攻击</p>
+<p>另一种密码攻击的分类：唯密文攻击、已知明文攻击、选择明文攻击、选择密文攻击、选择文本攻击，一般的，加密算法起码要能经受得住已知明文攻击。</p>
+<p>一次一密的两个限制：产生大规模随机密钥有实际困难、密钥的分配和保护无法保证。</p>
+<p>隐写术不是加密技术。</p>
+<p>多次加密的最简单形式是进行两次加密，每次使用不同的密钥，但存在中间相遇攻击。</p>
+<p>使用两个密钥进行三次加密：E-D-E，即 C=E K1 [D K2 [E K1 [P]]；三个密钥加密，C = E K3 [D K2 [E K1 [P]]]</p>
+<p>应用最广泛的公钥密码体制是 RSA，破解 RSA 的困难，是基于分解大合数的素因子的困难</p>
+<p>公钥密码体制中， 穷举消息攻击是第三种攻击形式，攻击者用公钥对所有可能的消息加密，并与传送的密文匹配，从而解密任何消息；抵抗的方法是在要发送的消息后附加随机数(即对传送的明文进行穷举攻击)。</p>
+<h4 id="离散复习-群、环、域-与模运算"><a href="#离散复习-群、环、域-与模运算" class="headerlink" title="离散复习(群、环、域)与模运算"></a>离散复习(群、环、域)与模运算</h4><h5 id="群G-记作-G-•"><a href="#群G-记作-G-•" class="headerlink" title="群G, 记作{G, •}"></a>群G, 记作{G, •}</h5><p>定义一个二元运算•的集合，G中每一个序偶(a, b)通过运算生成G中元素(a•b)，满足下列公理：</p>
+<p>(A1) 封闭性Closure: 如果a和b都属于G, 则a•b也属于G.</p>
+<p>(A2) 结合律Associative: 对于G中任意元素a, b, c，都有a•(b•c)=(a•b)•c成立</p>
+<p>(A3) 单位元Identity element: G中存在一个元素e，对于G中任意元素a，都有a•e=e•a=a成立</p>
+<p>(A4) 逆元Inverse element: 对于G中任意元素a, G中都存在一个元素a’，使得a•a’=a’•a=e成立</p>
+<h5 id="交换群Abelian-Group："><a href="#交换群Abelian-Group：" class="headerlink" title="交换群Abelian Group："></a>交换群Abelian Group：</h5><p>还满足以下条件的群称为交换群(又称阿贝尔群)</p>
+<p>(A5) 交换律Commutative ：对于G中任意的元素a, b，都有a•b=b•a成立</p>
+<p>当群中的运算符是加法时，其单位元是0；a的逆元是-a, 并且减法用以下的规则定义: a – b = a + (-b)</p>
+<h5 id="循环群Cyclic-Group"><a href="#循环群Cyclic-Group" class="headerlink" title="循环群Cyclic Group"></a>循环群Cyclic Group</h5><p>l如果群中的每一个元素都是一个固定的元素a (a ∈G)的幂ak(k为整数)，则称群G为循环群。元素a生成了群G，或者说a是群G的生成元。</p>
+<h5 id="环R-由-R-x-表示"><a href="#环R-由-R-x-表示" class="headerlink" title="环R, 由{R, +, x}表示"></a>环R, 由{R, +, x}表示</h5><p>是具有加法和乘法两个二元运算的元素的集合，对于环中的所有a, b, c, 都服从以下公理：</p>
+<p>(A1-A5), 单位元是0，a的逆是 -a.</p>
+<p>(M1), 乘法封闭性, 如果a和b属于R, 则ab也属于R</p>
+<p>(M2), 乘法结合律,对于R中任意a, b, c有a(bc)=(ab)c.</p>
+<p>(M3), 乘法分配律, a(b+c)=ab+ac or (a+b)c=ac+bc</p>
+<p>(M4), 乘法交换律, ab=ba，交换环 </p>
+<p>(M5), 乘法单位元, R中存在元素1使得所有a有 a1=1a.</p>
+<p>(M6), 无零因子, 如果R中有a, b且ab=0, 则 a=0 or b=0.</p>
+<p>满足M4的是交换环；满足M5和M6的交换环是整环</p>
+<h5 id="域F-可以记为-F-x"><a href="#域F-可以记为-F-x" class="headerlink" title="域F, 可以记为{F, +, x}"></a>域F, 可以记为{F, +, x}</h5><p>是有加法和乘法的两个二元运算的元素的集合，对于F中的任意元素a, b, c, 满足以下公理：</p>
+<p>(A1-M6), F是一个整环</p>
+<p>(M7), 乘法逆元, 对于F中的任意元素a(除0以外), F中都存在一个元素a-1, 使得aa-1=(a-1)a=1.</p>
+<p>域就是一个集合，在其上进行加减乘除而不脱离该集合, 除法按以下规则定义: a/b=a(b-1).</p>
+<p>有理数集合, 实数集合和复数集合都是域；整数集合不是域，因为除了1和-1有乘法逆元，其他元素都无乘法逆元</p>
+<h5 id="模算术运算"><a href="#模算术运算" class="headerlink" title="模算术运算"></a>模算术运算</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(a1 op a2) mod n =[(a1 mod n ) op (a2 mod n)] mod n</span><br></pre></td></tr></table></figure>
+<h5 id="欧几里得算法"><a href="#欧几里得算法" class="headerlink" title="欧几里得算法"></a>欧几里得算法</h5><p>gcd(a, b) = gcd(b, a%b) .辗转相除直到第一个参数能够整除第二个参数即可</p>
+<h5 id="同余"><a href="#同余" class="headerlink" title="同余"></a>同余</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a mod n = b mod n，则a和b模n同余</span><br><span class="line">同余是一种等价关系，满足自反，对称，可传递</span><br></pre></td></tr></table></figure>
+<h5 id="加法逆元和乘法逆元"><a href="#加法逆元和乘法逆元" class="headerlink" title="加法逆元和乘法逆元"></a>加法逆元和乘法逆元</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">对每一个w，存在一个z能够让(w+z) mod n = 0，则z是加法逆元</span><br><span class="line">如果wz mod n = 1，注意不是0，则z是乘法逆元</span><br></pre></td></tr></table></figure>
+<h5 id="计算乘法逆元，扩展欧几里得算法"><a href="#计算乘法逆元，扩展欧几里得算法" class="headerlink" title="计算乘法逆元，扩展欧几里得算法"></a>计算乘法逆元，扩展欧几里得算法</h5><p>计算乘法逆元表示为：ax mod n = 1, 已知a，求x</p>
+<p>引理：如果gcd(a, n) = 1，对每个i, j, 有i &lt; j &lt; n，则ai mod n 不会等于 aj mod n</p>
+<p>定理：如果gcd(a, n) = 1, 一定存在整数x，满足ax mod n = 1，可以用扩展欧几里得算法求逆</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ax + by = d = gcd(a, b)</span><br><span class="line">如果gcd(a, b) = 1，则有ax + by = 1</span><br><span class="line">将 1 mod a = 1 mod a的1用上式进行替换</span><br><span class="line">    ( (ax mod a) + (by mod a) mod a) = 1 mod a</span><br><span class="line">ax mod a = 0，所以：</span><br><span class="line">    (by mod a) mod a = 1 mod a，所以：</span><br><span class="line">    by mod a = 1</span><br><span class="line">如果by mod a = 1，则y = b^-1</span><br></pre></td></tr></table></figure>
+<p>线性O(n)内求逆元代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for(int i = 2; i &lt; MAXN; ++i)&#123;</span><br><span class="line">    inv[i] = mul(inv[mod%i], mod - mod / i, mod);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="数论三大定理的概念与证明"><a href="#数论三大定理的概念与证明" class="headerlink" title="数论三大定理的概念与证明"></a>数论三大定理的概念与证明</h4><h5 id="数论基本知识"><a href="#数论基本知识" class="headerlink" title="数论基本知识"></a>数论基本知识</h5><p><strong>单向函数(One-way Function)</strong></p>
+<p> 一函数<em>f</em> 若满足下列条件, 则称<em>f</em> 为单向函数：</p>
+<p> (1)对于所有属于<em>f</em> 域的任一<em>x</em>, 容易计算<em>y</em>= <em>f</em>(<em>x</em>)</p>
+<p> (2)对于几乎所有属于<em>f</em> 域的任一<em>y</em>, 求得<em>x</em>, 使<em>y</em>= <em>f</em>(<em>x</em>), 在计算上不可行。</p>
+<p><strong>单向陷井门函数(One-way Trapdoor Function)</strong></p>
+<p> 一“可逆”函数<em>F</em>若满足下列二条件, 则称<em>F</em>为单向陷井门函数:</p>
+<p>(1)对于所有属于<em>F</em>域的任一<em>x</em>, 容易计算<em>F</em>(<em>x</em>)=<em>y</em>；</p>
+<p>(2)对于几乎所有属于<em>F</em>域的任一<em>y</em>, 除非获得暗门信息(trapdoor), 否则求出<em>x</em>, 使得 <em>x</em> = <em>F</em>-1(<em>y</em>)在计算上不可行, <em>F</em>-1为<em>F</em>之逆函数; 如有额外信息(暗门), 则容易求出    <em>x</em> = <em>F</em>-1(<em>y</em>)。</p>
+<h5 id="费马定理"><a href="#费马定理" class="headerlink" title="费马定理"></a>费马定理</h5><p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211635.png" alt="image-20200113150943674"></p>
+<h5 id="费马小定理和欧拉定理"><a href="#费马小定理和欧拉定理" class="headerlink" title="费马小定理和欧拉定理"></a>费马小定理和欧拉定理</h5><p>欧拉函数φ(n)是比n小且与n互素的正整数的个数，即模n的缩剩余系中元素之个数。</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211636.png" alt="image-20200113151112824"></p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211637.png" alt="image-20200113151138849"></p>
+<h5 id="中国剩余定理"><a href="#中国剩余定理" class="headerlink" title="中国剩余定理"></a>中国剩余定理</h5><p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211638.png" alt="image-20200113151240618"></p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211639.png" alt="image-20200113151310255"></p>
+<h5 id="离散对数问题"><a href="#离散对数问题" class="headerlink" title="离散对数问题"></a>离散对数问题</h5><p>幂运算是相对容易的, 求解离散对数通常是难解问题。离散对数是包括Diffie-Hellman密钥交换和数字签名(DSA)在内的许多公钥算法的基础。</p>
+<h4 id="对称密码"><a href="#对称密码" class="headerlink" title="对称密码"></a>对称密码</h4><p>对称密码又称传统加密算法，加密密钥能够从解密密钥中推算出来。反过来也成立。在大多数对称算法中，加密和解密的密钥是一样的。 </p>
+<p>要求：要求发送者和接受者在安全通信之前，商定一个密钥，对称算法的安全性依赖于密钥，泄露密钥意味着所有的人都能够对消息进行了加密解密，这个密码也就没有用了。 </p>
+<p>对称密码可以分成两类：</p>
 <blockquote>
-<p>python -m ipykernel install –user –name your_env_name –display-name your_env_name </p>
+<p>序列算法（流算法）：逐字的读入明文，一个字一个字的进行单独的加密。比如将a替换成z，b替换成y，这种只针对一个字一个字的替换密码，所以又称流密码。</p>
 </blockquote>
-<p>4.打开notebook</p>
 <blockquote>
-<p>jupyter notebook  </p>
+<p>分组密码：对明文的一组进行加密，比如64个字一组，一起进行加密，这个计算机中经常用到，因为64大到足够防止破译，又小到可以方便使用。</p>
 </blockquote>
-<h5 id="无法链接到链接库问题"><a href="#无法链接到链接库问题" class="headerlink" title="无法链接到链接库问题"></a>无法链接到链接库问题</h5><p>进入Anaconda\DLLS目录，查看libssl-1_1-x64.dll的日期<img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/20190826092235717.png" alt="在这里插入图片描述"><br>进入Anaconda\Library\bin目录，比较两者日期<br><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/20190826092143470.png" alt="在这里插入图片描述"></p>
-<p>如果不一致，将DLLS中的替换bin中的<br><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/20190826092426972.png" alt="在这里插入图片描述"></p>
-<h5 id="pip下载慢"><a href="#pip下载慢" class="headerlink" title="pip下载慢"></a>pip下载慢</h5><p>Linux下，修改 ~/.pip/pip.conf (没有就创建一个，文件夹要加“.”，表示是隐藏文件夹)。</p>
-<p>Windows下，直接在user目录中创建一个pip目录，如：C:\Users\xx\pip，xx一般表示用户名，新建文件pip.ini。</p>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[global]</span></span><br><span class="line"><span class="attr">index-url</span> = https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line"><span class="section">[install]</span></span><br><span class="line"><span class="attr">trusted-host</span>=mirrors.aliyun.com</span><br></pre></td></tr></table></figure>
-<h4 id="CUDA安装"><a href="#CUDA安装" class="headerlink" title="CUDA安装"></a>CUDA安装</h4><p>检查电脑是否有合适的GPU<br>在桌面上右击如果能找到NVIDA控制面板，则说明该电脑有GPU。控制面板如下，并通过查看系统信息获取支持的Cuda版本</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113225102250.png" alt="img"></p>
-<p>点击 帮助-&gt;点击 系统信息 弹出下面的对话框，在驱动程序版本那一栏就能看到该计算机使用的驱动版本。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113225257439.png" alt="img"></p>
-<p>下载Cuda<br>官网：<a href="https://developer.nvidia.com/cuda-10.1-download-archive-update2" target="_blank" rel="noopener">https://developer.nvidia.com/cuda-10.1-download-archive-update2</a></p>
-<p>在<a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html" target="_blank" rel="noopener">https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html</a> 这里可以查询到我们应该下载哪个版本</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113225720493.png" alt="img"></p>
-<p>然后，根据实际情况选择合适的版本</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113225542262.png" alt="img"></p>
-<p>下载CuDNN 注意与cuda对应版本<br>官网 <a href="https://developer.nvidia.com/rdp/cudnn-download" target="_blank" rel="noopener">https://developer.nvidia.com/rdp/cudnn-download</a></p>
-<p>安装Cuda<br>1.与安装其他的软件类似</p>
-<p>2.安装结束后将  ~/nvcc/bin(因为版本的不同可能在不同的地方) 目录添加到环境变量</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">需要添加下面两个路径，这就是说为什么要记住你的安装路径了，我使用的是默认的安装路径。</span><br><span class="line">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2</span><br><span class="line">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64</span><br></pre></td></tr></table></figure>
-<p>3.在命令行下输入 nvcc -V, 出现下列信息说明Cuda安装成功</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113231019660.png" alt="img"></p>
-<p>4.将CuDNN压缩包解压后，下面的三个文件夹复制到Cuda的安装目录下</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113231317736.png" alt="img"></p>
-<p>5.然后执行Demo, 如果Demo中显示PASS则说明安装成功</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113231553334.png" alt="img"></p>
-<h5 id="安装Pytorch"><a href="#安装Pytorch" class="headerlink" title="安装Pytorch"></a>安装Pytorch</h5><p>官网 <a href="https://download.pytorch.org/whl/torch_stable.html" target="_blank" rel="noopener">https://download.pytorch.org/whl/torch_stable.html</a> 选择合适的版本</p>
-<p>torch/torchvision 都需要安装</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113232934378.png" alt="img"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113235245900.png" alt="img"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-环境安装及相关配置/20200113235303581.png" alt="img"></p>
-<p>验证Pytorch</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch    <span class="comment"># 如正常则静默</span></span><br><span class="line">a = torch.Tensor([<span class="number">1.</span>])    <span class="comment"># 如正常则静默</span></span><br><span class="line">a.cuda()    <span class="comment"># 如正常则返回"tensor([ 1.], device='cuda:0')"</span></span><br><span class="line"><span class="keyword">from</span> torch.backends <span class="keyword">import</span> cudnn <span class="comment"># 如正常则静默</span></span><br><span class="line">cudnn.is_acceptable(a.cuda())    <span class="comment"># 如正常则返回 "True"</span></span><br></pre></td></tr></table></figure>
-<h4 id="常见安装问题"><a href="#常见安装问题" class="headerlink" title="常见安装问题"></a>常见安装问题</h4><h5 id="1-Tensorfolw-中ImportError-DLL-load-failed-找不到指定的程序。"><a href="#1-Tensorfolw-中ImportError-DLL-load-failed-找不到指定的程序。" class="headerlink" title="1 Tensorfolw 中ImportError: DLL load failed: 找不到指定的程序。"></a>1 Tensorfolw 中ImportError: DLL load failed: 找不到指定的程序。</h5><p><strong>解决办法</strong></p>
-<p>没有注意到protobuf已经更新。 在自动安装了tensorflow时， protobuf安装的是最新版本3.6.1， 出现了不兼容的问题。更换为 protobuf 3.6.0即可</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install protobuf==3.6.0</span><br></pre></td></tr></table></figure>
-<h5 id="2-Pycharm-新版本打开md文件卡死"><a href="#2-Pycharm-新版本打开md文件卡死" class="headerlink" title="2 Pycharm 新版本打开md文件卡死"></a>2 Pycharm 新版本打开md文件卡死</h5><p>原因：自带的Markdowm插件有问题</p>
-<p>解决办法</p>
-<p>Project-settings-Plugins-Installed</p>
-<p>去掉Markdowm support插件的勾选</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/823984-20190618193944359-723991337.png" alt="img"></p>
-<p>兼容插件：Markdowm Navigator</p>
-<h5 id="3-pillow-ImportError-cannot-import-name-‘PILLOW-VERSION"><a href="#3-pillow-ImportError-cannot-import-name-‘PILLOW-VERSION" class="headerlink" title="3 pillow ImportError: cannot import name ‘PILLOW_VERSION"></a>3 pillow ImportError: cannot import name ‘PILLOW_VERSION</h5><p>解决方法：</p>
-<p>卸载原来的pillow:　　pip uninstall pillow</p>
-<p>重新安装5.2.0版本的：　　pip install pillow==5.2.0</p>
-<p>原因：在 7.0.0 后的版本就没有 PILLOW_VERSION 这个值了</p>
-<h5 id="4-bert-as-service-安装"><a href="#4-bert-as-service-安装" class="headerlink" title="4 bert_as_service 安装"></a>4 bert_as_service 安装</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">pip install bert-serving-server==<span class="number">1.9</span><span class="number">.1</span></span><br><span class="line">pip install bert-serving-client==<span class="number">1.9</span><span class="number">.1</span></span><br><span class="line"></span><br><span class="line">启动server</span><br><span class="line">  server的启动非常简单，只需如下命令即可:</span><br><span class="line"></span><br><span class="line">bert-serving-start -model_dir /path/to/your/model -num_worker=<span class="number">2</span></span><br><span class="line"></span><br><span class="line">参数-model_dir用来指定上步解压的模型路径，参数num_worker=<span class="number">2</span>表示启动了两个worker，可以同时处理<span class="number">2</span>个请求，因此如果用一台配置较高的机器单独做为bert的server，可以通过设定该参数提供高并发支持。</span><br><span class="line"></span><br><span class="line"><span class="number">4.1</span> 本地直接调用:</span><br><span class="line">     <span class="keyword">from</span> bert_serving.client <span class="keyword">import</span> BertClient</span><br><span class="line">     bc = BertClient()</span><br><span class="line">     bc.encode([<span class="string">'我 喜欢 你们'</span>, <span class="string">'我 喜 欢 你 们'</span>])</span><br><span class="line"> <span class="number">4.2</span>  远程请求服务</span><br><span class="line">     post服务：</span><br><span class="line">      curl -X POST http://**.*.*<span class="number">.68</span>:<span class="number">8125</span>/encode -H <span class="string">'content-type: application/json'</span> -d <span class="string">'&#123;"id": 123,"texts": ["hello world"], "is_tokenized": false&#125;'</span></span><br><span class="line">       返回结果：</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">"id"</span>:<span class="number">123</span>,</span><br><span class="line">                 <span class="string">"result"</span>:		 [[<span class="number">-0.00980051327496767</span>,<span class="number">0.05821939557790756</span>,<span class="number">-0.06836936622858047</span>,</span><br><span class="line">                                      <span class="number">-0.4723478853702545</span>,<span class="number">0.48761454224586487</span>,<span class="number">-1.4105712175369263</span>, </span><br><span class="line">                                      ...</span><br><span class="line">                                      ...</span><br><span class="line">                                      ,<span class="number">-0.10073700547218323</span>,<span class="number">-0.17246723175048828</span>]],</span><br><span class="line">                <span class="string">"status"</span>:<span class="number">200</span></span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            </span><br><span class="line"><span class="number">4.3</span>、在一个GPU服务器(**.*.*<span class="number">.68</span>)上部署bert服务，在另外一台cpu服务器(**.*.*<span class="number">.67</span>)调用这个服务：</span><br><span class="line">        step1: 调用前先在(**.*.*<span class="number">.68</span>)上安装client：</span><br><span class="line">              pip install bert-serving-client</span><br><span class="line">        </span><br><span class="line">        step2: 调用服务demo</span><br><span class="line">            <span class="comment"># on another CPU machine</span></span><br><span class="line">            <span class="keyword">from</span> bert_serving.client <span class="keyword">import</span> BertClient</span><br><span class="line">            bc = BertClient(ip=<span class="string">'xx.xx.xx.xx'</span>)  <span class="comment"># ip address of the GPU machine</span></span><br><span class="line">            bc.encode([<span class="string">'First do it'</span>, <span class="string">'then do it right'</span>, <span class="string">'then do it better'</span>])</span><br><span class="line"></span><br><span class="line">代码启动</span><br><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line">tf_ver = tf.__version__</span><br><span class="line">print(tf_ver)</span><br><span class="line"><span class="keyword">from</span> bert_serving.server.helper <span class="keyword">import</span> get_args_parser</span><br><span class="line"><span class="keyword">from</span> bert_serving.server <span class="keyword">import</span> BertServer</span><br><span class="line">print(<span class="string">'start bert-service'</span>)</span><br><span class="line">args = get_args_parser().parse_args([<span class="string">'-model_dir'</span>, <span class="string">'D:\CODE\python\chinese_L-12_H-768_A-12\chinese_L-12_H-768_A-12'</span>,</span><br><span class="line">                                     <span class="string">'-port'</span>, <span class="string">'5555'</span>,</span><br><span class="line">                                     <span class="string">'-port_out'</span>, <span class="string">'5556'</span>,</span><br><span class="line">                                     <span class="string">'-max_seq_len'</span>, <span class="string">'NONE'</span>,</span><br><span class="line">                                     <span class="string">'-mask_cls_sep'</span>,</span><br><span class="line">                                     <span class="string">'-gpu'</span>])</span><br><span class="line">server = BertServer(args)</span><br><span class="line">server.start()</span><br></pre></td></tr></table></figure>
-<p>5 安装tensorflow-gpu</p>
-<p><a href="https://blog.csdn.net/j879159541/article/details/93199150" target="_blank" rel="noopener">https://blog.csdn.net/j879159541/article/details/93199150</a></p>
-<p>6 keras 预训练模型的使用方法</p>
-<p>使用预训练模型可以事先下载好模型</p>
-<p><a href="https://github.com/fchollet/deep-learning-models/releases/" target="_blank" rel="noopener">https://github.com/fchollet/deep-learning-models/releases/</a></p>
-<p>下载好的模型要放在本地目录：</p>
-<pre><code>Linux下是放在“~/.keras/models/”中
-Win下则放在Python的“user/.keras/models/”中
-</code></pre><p>之后就可以脱机使用</p>
-<h4 id="常见配置问题"><a href="#常见配置问题" class="headerlink" title="常见配置问题"></a>常见配置问题</h4><h5 id="1-pycharm设置Tab为4空格-并显示空格"><a href="#1-pycharm设置Tab为4空格-并显示空格" class="headerlink" title="1 pycharm设置Tab为4空格,并显示空格"></a>1 pycharm设置Tab为4空格,并显示空格</h5><p>设置开始:</p>
-<p>如图:   File -&gt; Settings -&gt; Editor -&gt; Code Style &gt; Python-&gt; Tabs and indents</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/20180909152602325.png" alt="img"></p>
-<p>显示出空格</p>
-<p>如图:    File -&gt; Settings -&gt; Editor -&gt; General -&gt; Appearance -&gt; Show whitespaces</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/20180909152633430.png" alt="img"></p>
-<h5 id="2-typora-写博客时的配置"><a href="#2-typora-写博客时的配置" class="headerlink" title="2 typora 写博客时的配置"></a>2 typora 写博客时的配置</h5><p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic@master/pic/2019-07-17-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/image-20200428101724458.png" alt="image-20200428101724458"></p>
-<h5 id="3-Pycharm新建模板默认添加个人信息"><a href="#3-Pycharm新建模板默认添加个人信息" class="headerlink" title="3 Pycharm新建模板默认添加个人信息"></a>3 Pycharm新建模板默认添加个人信息</h5><p>选择File-Settings -&gt;Editor –&gt; File and Code Templates –&gt; Python Script</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment">#-*- coding:utf-8 -*-</span></span><br><span class="line"><span class="comment"># author:$&#123;USER&#125;</span></span><br><span class="line"><span class="comment"># datetime:$&#123;DATE&#125; $&#123;TIME&#125;</span></span><br><span class="line"><span class="comment"># software: $&#123;PRODUCT_NAME&#125;</span></span><br><span class="line"></span><br><span class="line">$&#123;PROJECT_NAME&#125; - 当前项目的名称。</span><br><span class="line">$&#123;NAME&#125; - 在文件创建过程中在“新建文件”对话框中指定的新文件的名称。</span><br><span class="line">$&#123;USER&#125; - 当前用户的登录名。</span><br><span class="line">$&#123;DATE&#125; - 当前的系统日期。</span><br><span class="line">$&#123;TIME&#125; - 当前系统时间。</span><br><span class="line">$&#123;YEAR&#125; - 今年。</span><br><span class="line">$&#123;MONTH&#125; - 当月。</span><br><span class="line">$&#123;DAY&#125; - 当月的当天。</span><br><span class="line">$&#123;HOUR&#125; - 目前的小时。</span><br><span class="line">$&#123;MINUTE&#125; - 当前分钟。</span><br><span class="line">$&#123;PRODUCT_NAME&#125; - 将在其中创建文件的IDE的名称。</span><br><span class="line">$&#123;MONTH_NAME_SHORT&#125; - 月份名称的前<span class="number">3</span>个字母。 示例：一月，二月等</span><br><span class="line">$&#123;MONTH_NAME_FULL&#125; - 一个月的全名。 示例：一月，二月等</span><br></pre></td></tr></table></figure>
+<h5 id="DES（数据加密标准）"><a href="#DES（数据加密标准）" class="headerlink" title="DES（数据加密标准）"></a>DES（数据加密标准）</h5><p>分组密码是一种加密解密算法，将输入明文分组当做一个整体处理，输出一个等长的密文分组。</p>
+<p>许多分组密码都采用Feistel结构，这样的结构由许多相同的轮函数组成。每一轮里，对输入数据的一半进行代换，接着用一个置换来交换数据的两个部分，扩展初始的密钥使得每一轮使用不同的子密钥。</p>
+<p>DES是应用最为广泛的分组密码，它扩展了经典的Feistel结构。DES 的 分组和 密钥分别是 64  位和 56  位，整个加密包含 16  轮迭代。</p>
+<p>S 盒：8  个，将 6  位数据映射成 4  位数据(即 6 位输入，4 位输出) 。</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211640.png" alt="image-20200113151343976"></p>
+<h5 id="DES加解密过程"><a href="#DES加解密过程" class="headerlink" title="DES加解密过程"></a>DES加解密过程</h5><p>先直接看一遍加密性质：</p>
+<ul>
+<li>分组密码：明文密文都是64位</li>
+<li>字符都变成二进制，即每一位都是一个二进制，0或者1</li>
+<li>密钥长度56位(64-8)，生命周期短，运算速度慢</li>
+</ul>
+<p>然后是加密的过程，分为两步，第一步是密钥生成，第二步才是加密。</p>
+<p>总概述过程如下：</p>
+<ul>
+<li><p>密钥生成</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211641.png" alt="image-20200113151626771"></p>
+<p>加密</p>
+<ul>
+<li>Step1：输入64位数据块，进行初始置换，输出32位R0和L0</li>
+<li>Step2：将L0和R0进行16次f函数运算，每一次要用到相应的密钥K_i(f函数在下面会详细说道)，输出最后的32位R0和32位L0</li>
+<li>Step3：将最后的R0和L0进行逆置换，输出64位密文，结束，总过程如下图<img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211642.png" alt="image-20200113151432697"></li>
+</ul>
+</li>
+</ul>
+<p>加密过程详细</p>
+<p>密钥生成不再叙述，这里从头详细说一遍加密过程</p>
+<blockquote>
+<p>开始之前：我们有64位明文数据块，16个子密钥K0-K15</p>
+</blockquote>
+<p>Step1、初始置换</p>
+<p>将64位数据块按照下面的表打乱顺序</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211643.png" alt="image-20200113151456894"></p>
+<p>打乱后从中切开，左32位提出叫做L0，后32位提出叫做R0，【只输入R0】进入下个步骤</p>
+<p>Step2、f函数</p>
+<p>f函数分为三个步骤</p>
+<p>第一步、扩展32位R0数据块</p>
+<p>按照下面的表进行扩展，将32位R0扩展成48位</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211644.png" alt="image-20200113151705500"></p>
+<p>第二步、与子密钥模二相加</p>
+<p>将这个48位和对应的子密钥(第一次运算f函数就是K0，第十六次就是K15)模二相加，得到新的48位。</p>
+<p>第三步、S盒替代</p>
+<p>将这个新的48位按照每6位分成8个块，每个块是6位。</p>
+<p>对每个块来说，将第一位和第六位合在一起的两位，计算出一个0-3的数字，叫做行，再将剩余的四位合在一起计算出一个0-15的数字，叫做列，一共得到8对行和列，然后在下面8个表S1-S8中，分别按照行列，找出8个十进制数字。这个过程叫做S盒替代。</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211645.png" alt="image-20200113151731406"></p>
+<p>将得到的8个十进制数字全部转成四位二进制合成，得到32位。</p>
+<p>第四步、P盒置换</p>
+<p>将这个32位再按照下面的表打乱顺序</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211646.png" alt="image-20200113151754935"></p>
+<p>第五步、得到R1</p>
+<p>这样得到了最终的32位，现在，我们将这个32位叫做新的R0，即R1，将R1与之前一直没有改动的L0模二相加，得到新的R1。</p>
+<p>第六步、得到新的L1和R1，回到第一步，重复f函数</p>
+<p>将之前的没有变动的32位R0改成L1，现在我们有了新的L1和R1，可以重复这六步，得到L2和R2，重复16次，得到L15和R15</p>
+<p>Step3、合并L15和R15，逆置换</p>
+<p>合并L15和R15，得到64位数据，按照下表进行逆置换打乱顺序</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211647.png" alt="image-20200113152002327"></p>
+<p>结束，得到64位密文</p>
+<h5 id="多重DES"><a href="#多重DES" class="headerlink" title="多重DES"></a>多重DES</h5><p>多重加密是将一个加密算法多次使用的技术，明文通过加密算法转化为密文，然后将该密文作为输入重新执行加密算法，该过程可以重复多次。</p>
+<p>三重DES(3DES)在三个阶段使用DES算法，共用到两组或三组密钥。</p>
+<h5 id="分组密码的五种工作模式："><a href="#分组密码的五种工作模式：" class="headerlink" title="分组密码的五种工作模式："></a>分组密码的五种工作模式：</h5><p>选择工作模式是一项增强密码算法或者使算法适应具体应用的技术。就是把明文分组后如何进行加密，有五种方法</p>
+<p>·电子密码本模式（ECB）：明文分成 64 的分组进行加密，必要时填充，每个分组用同一密钥加密，同样明文分组加密得相同密文。<br>·密文分组链接模式（CBC）：加密输入是当前明文分组和前一密文分组的异或，形成一条链，使用相同的密钥，这样每个明文分组的加密函数输入与明文分组之间不再有固定的关系<br>·密文反馈模式（CFB）：是一种将 DES 转化成流密码的技术。加密函数高端 j 位与明文 P1 的第一单元异或，产生 j 位密文 C1 进入移位寄存器低端，继续加密，与 P2 输入异或，如此重复直到所有明文单元都完成加密。<br>·输出反馈模式（OFB）：结构上类似 CFB，但是 OFB 中加密函数输出被反馈回移位寄存器。<br>·计数器模式（CRT）：每一个明文分组都必须使用一个不同的密钥和计数器值，决不要重复使用</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211648.png" alt="image-20200113152021877"></p>
+<h4 id="公钥密码学-也叫非对称密码"><a href="#公钥密码学-也叫非对称密码" class="headerlink" title="公钥密码学(也叫非对称密码)"></a>公钥密码学(也叫非对称密码)</h4><p>非对称密码是一种密码体制，其加密算法和解密算法使用不同的密钥，一个是公钥，一个是私钥。</p>
+<h5 id="公钥密码应用"><a href="#公钥密码应用" class="headerlink" title="公钥密码应用"></a>公钥密码应用</h5><ul>
+<li>加密/解密：发送方用接收方的公钥对消息加密</li>
+<li>数字签名：发送方用其私钥对消息签名，可以对整体消息签名或对消息的摘要签名</li>
+<li>密码交换：通信双方交换会话密钥</li>
+</ul>
+<h5 id="加密过程"><a href="#加密过程" class="headerlink" title="加密过程"></a>加密过程</h5><p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211649.png" alt="1574580137669"></p>
+<h5 id="认证过程"><a href="#认证过程" class="headerlink" title="认证过程"></a>认证过程</h5><p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211650.png" alt="1574580173589"></p>
+<h5 id="非对称相关概念"><a href="#非对称相关概念" class="headerlink" title="非对称相关概念"></a>非对称相关概念</h5><p><strong>对称密码的局限：</strong></p>
+<ul>
+<li>密钥管理困难：两两用户分别用一对密钥，需要n∗(n−1)/2个密钥，复杂度是n2</li>
+<li>数字签名无法实现：无法实现抗抵赖</li>
+<li>密钥必须经过安全的信道分配（密钥只用于DES加密的密钥，有时也叫会话秘钥）</li>
+</ul>
+<p><strong>公钥密码体制的组成</strong></p>
+<p>​    明文：算法的输入，可读信息或数据</p>
+<p>​    加密算法：对明文进行各种转换</p>
+<p>​    公钥和私钥：算法的输入，分别用于加密和解密</p>
+<p>​    密文：算法的输出，依赖于明文和密钥</p>
+<p>​    解密算法：根据密文和密钥，还原明文</p>
+<p><strong>公钥密码：</strong></p>
+<ul>
+<li>算法是非对称算法，密钥分为公钥和私钥</li>
+<li>公钥可以公开</li>
+<li>基于数学函数（单向陷阱门函数）而不是替代置换</li>
+</ul>
+<p><strong>公钥算法的条件</strong></p>
+<ul>
+<li>产生一对密钥计算可行</li>
+<li>已知公钥和明文，产生密文是计算可行的</li>
+<li>接收方用私钥来解密密文是计算可行的</li>
+<li>通过公钥判断私钥是计算不可行的</li>
+<li>只知道公钥和密文是无法恢复明文的</li>
+</ul>
+<p><strong>单向陷阱门函数f</strong></p>
+<ul>
+<li>已知x，求y=f(x)容易</li>
+<li>给定y，计算y=f(x)的x是困难的</li>
+<li>存在z，当z已知的时候，已知y，计算y=f(x)的x是容易的</li>
+</ul>
+<p>寻找单向陷阱门函数是公钥密码体制应用的关键。也是那些经典算法的源头。</p>
+<h5 id="RSA算法"><a href="#RSA算法" class="headerlink" title="RSA算法"></a>RSA算法</h5><p>理论基础：两个大素数相乘容易，分解成两个大素数很难</p>
+<p><strong>获得密钥</strong></p>
+<p>待获得的密钥：公钥(n, e1), 私钥(n, e2)</p>
+<p><strong>算法流程</strong></p>
+<p>随机选择两个秘密大素数p和q；</p>
+<p>计算公开模数n=p*q；</p>
+<p>计算秘密的欧拉指数函数φ(n)=(p-1)(q-1)；</p>
+<p>选择一个与φ(n)互素的数，作为e或d；</p>
+<p>用Euclid算法计算模φ(n)的乘法逆元素，即根据</p>
+<p>​              ed mod φ(n)=1, 求d或e；</p>
+<p>加密：C = Me mod n</p>
+<p>解密：M= Cd mod n = (Me mod n)d mod n = M</p>
+<p>这里，φ(n)为欧拉函数,  即集合(1, 2, …, n-1)中与n互素的数的个数。</p>
+<h5 id="RSA证明"><a href="#RSA证明" class="headerlink" title="RSA证明"></a>RSA证明</h5><p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211651.png" alt="image-20200113152053260"></p>
+<h5 id="RSA计算"><a href="#RSA计算" class="headerlink" title="RSA计算"></a>RSA计算</h5><p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211652.png" alt="image-20200113152110799"></p>
+<h5 id="RSA的缺点"><a href="#RSA的缺点" class="headerlink" title="RSA的缺点"></a>RSA的缺点</h5><ul>
+<li>速度慢，比DES慢了至少100倍</li>
+<li>产生密钥太麻烦</li>
+<li>分组长度太大</li>
+</ul>
+<h5 id="对RSA的攻击方法"><a href="#对RSA的攻击方法" class="headerlink" title="对RSA的攻击方法"></a>对RSA的攻击方法</h5><p>强行攻击：尝试所有可能的密钥</p>
+<p>数学攻击：对两个素数乘积的因子分解(FAC问题)</p>
+<p>计时攻击：依赖于解密算法的运行时间</p>
+<h4 id="公钥密码学之密钥管理"><a href="#公钥密码学之密钥管理" class="headerlink" title="公钥密码学之密钥管理"></a>公钥密码学之密钥管理</h4><p>为了保证公钥的正确性，即A确实能得到B的公钥，也就是当公钥的真实性能够得到保证。</p>
+<h5 id="几种公钥分配方法："><a href="#几种公钥分配方法：" class="headerlink" title="几种公钥分配方法："></a>几种公钥分配方法：</h5><p>公开发布（随便发，任何人都可以伪造这种公钥的发布）、公开可访问的目录（一个管理员管理所有的公钥，但攻击者获得目录管理员私钥，就可以随意更改记录）、公钥授权、公钥证书</p>
+<h5 id="公钥授权"><a href="#公钥授权" class="headerlink" title="公钥授权"></a>公钥授权</h5><p>A发送带有时间戳的消息给公钥管理员, 请求B的当前公钥</p>
+<p>管理员给A发送用其私钥KRauth加密的消息, A用管理员的公钥解密，可以确信该消息来自管理员：</p>
+<p>​    B的公钥KUb，用来加密；</p>
+<p>​    原始请求，A可以验证其请求未被修改；</p>
+<p>​    原始时间戳, A可以确定收到的不是来自管理员的旧消息。</p>
+<p>A保存B的公钥, 并用它对包含A的标识IDA和Nonce1的消息加密, 然后发送给B</p>
+<p>B以同样方式从管理员处得到A的公钥</p>
+<p>B用KUa对A的N1和B的N2加密, 发送给A</p>
+<p>A用B的公钥对N2加密并发送给B, 使B相信其通信伙伴是A</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211653.png" alt="image-20200113152141654"></p>
+<h5 id="公钥证书"><a href="#公钥证书" class="headerlink" title="公钥证书"></a>公钥证书</h5><p>有了公钥证书使得不通过实时访问公钥授权部门而实现公钥交换成为可能</p>
+<p>公钥证书将一个通信方的身份与他的公开密钥绑定在一起，通常还包括有效期和使用方法等</p>
+<p>证书的所有内容必须经由可信公钥授权方或者证书授权方签名后方可生效</p>
+<p>知道公钥授权当局公开密钥的任何人都可以验证一个用户的公开密钥证书的有效性 </p>
+<p>对于申请者A，管理员提供的证书为：</p>
+<p>​    CA = EKRauth [T, IDA, KUa]</p>
+<p>其他人读取并验证：</p>
+<p>​    DKUauth[CA]=DKUauth [EKRauth [T, IDA, KUa]]=(T, IDA, KUa)</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211654.png" alt="image-20200113152201887"></p>
+<h4 id="利用公钥密码分配对称加密的密钥"><a href="#利用公钥密码分配对称加密的密钥" class="headerlink" title="利用公钥密码分配对称加密的密钥"></a>利用公钥密码分配对称加密的密钥</h4><h5 id="具有保密性和真实性的密钥分配"><a href="#具有保密性和真实性的密钥分配" class="headerlink" title="具有保密性和真实性的密钥分配"></a>具有保密性和真实性的密钥分配</h5><p>为了准确得到会话密钥， 利用公钥密码分配传统密码体制的密钥  </p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211655.png" alt="image-20200113152224937"></p>
+<h5 id="Diffie-Hellman算法"><a href="#Diffie-Hellman算法" class="headerlink" title="Diffie-Hellman算法"></a>Diffie-Hellman算法</h5><p>作用：允许两个用户可以安全交换【一个秘密信息】，用于后续的通讯工程</p>
+<p>Diffie-Hellman密钥交换算法是一种公钥分发机制，它不是用来加密消息的，所生成的是通信双方共享的会话密钥，必须保密，其值取决于通信双方的私钥和公钥信息</p>
+<p>安全性依赖：计算离散对数的难度</p>
+<p><strong>素数的原始根</strong></p>
+<p>假设原始根为a，则：</p>
+<p>a mod p, a^2 mod p, …., a^(p - 1) mod p 是1, 2, 3, …., p - 1的一个置换</p>
+<p>对于所有素数，其原根必定存在，即对于一个整数b和素数p的一个原根，可以找到唯一的指数i, 使得 b = a^i mod p, 其中 0&lt;= i &lt;= p-1指数i称为b的以a为基数的模p的离散对数或者指数。</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211656.png" alt="image-20200113152252058"></p>
+<h5 id="中间人攻击"><a href="#中间人攻击" class="headerlink" title="中间人攻击"></a>中间人攻击</h5><p>A选取x_0, 计算出来了X，发给B</p>
+<p>X被我截获，我选取x_00，计算出来了X_改，发给B</p>
+<p>B把我当成了A，接收到了X改，选取x_1，得到X_b，发给我</p>
+<p>我再发给A，至此完成攻击</p>
+<p>ps：我必须一直伪装，不然就会被发现 ps：我永远不知道真正的K，即a^x0∗x1</p>
+<h5 id="防范中间人攻击"><a href="#防范中间人攻击" class="headerlink" title="防范中间人攻击"></a>防范中间人攻击</h5><ul>
+<li>使用共享的对称密钥加密DH交换</li>
+<li>使用公钥加密DH交换</li>
+<li>使用私钥签名DH交换</li>
+</ul>
+<h5 id="ElGamal加密方案"><a href="#ElGamal加密方案" class="headerlink" title="ElGamal加密方案"></a>ElGamal加密方案</h5><p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211657.png" alt="image-20200113152318077"></p>
+<h5 id="ElGamal加密方案计算"><a href="#ElGamal加密方案计算" class="headerlink" title="ElGamal加密方案计算"></a>ElGamal加密方案计算</h5><p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211658.png" alt="image-20200113152339546"></p>
+<h4 id="消息认证"><a href="#消息认证" class="headerlink" title="消息认证"></a>消息认证</h4><p>【消息认证】：验证消息完整性的一种机制/服务，确保收到的数据和发送的时候是一样的，不被篡改，而且发送方的身份是真实有效的。主要关注保护消息完整性，验证发送人身份与消息源的不可否认。</p>
+<h5 id="可能受到的攻击"><a href="#可能受到的攻击" class="headerlink" title="可能受到的攻击"></a>可能受到的攻击</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">泄密Disclosure，将消息透露给没有合法身份的第三方</span><br><span class="line">传输分析Traffic analysis，分析双方通信模式</span><br><span class="line">伪装Masquerade，欺诈源向网络中插入一条消息</span><br><span class="line">内容篡改Content modification，对消息内容的修改</span><br><span class="line">顺序篡改Sequence modification，对消息顺序的修改</span><br><span class="line">计时篡改Timing modification，对消息的延时和重放</span><br><span class="line">信源抵赖Source repudiation,发送方否认发送过某消息</span><br><span class="line">信宿抵赖Destination repudiation，接收方否认接收过某消息</span><br></pre></td></tr></table></figure>
+<h5 id="消息认证方法"><a href="#消息认证方法" class="headerlink" title="消息认证方法"></a>消息认证方法</h5><p>三种消息认证的方法：消息加密，消息认证码(MAC)，哈希函数</p>
+<p>消息加密：比如使用对称加密，默认只有发送方拥有密钥，才能产生可以解密的密文。</p>
+<p>消息认证码MAC：使用密钥产生短小的定长数据分组，附加在报文里。例如AB共享密钥K，A发送B报文M，A计算MAC=C(K)，夹在报文里发给B。B收到这个MAC后根据报文重新计算比并且对比一下就好了。要注意报文认证不提供保密，而且MAC不提供数字签名，所以双方必须共享密钥。</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211659.png" alt="1574586237896"></p>
+<p>哈希函数：输入任意长度的消息M，输出一个固定长度的散列值，这个值称为消息摘要。它对所有的M的位都进行了错误检验，任何一位发送变化都会导致散列值的变化。</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211700.png" alt="1574586317884"></p>
+<p>散列函数的要求：H能用于任何大小的分组，能产生定长的输出，能方便的计算，具有单向性，弱抗冲突性，强抗冲突性。</p>
+<p>弱无碰撞：给定消息x属于X中，在计算上无法找到一个x’使得H(x) = H(x’)</p>
+<p>强无碰撞：任何情况下，在计算上都无法找到一个x’使得H(x) = H(x’)，其中包含了弱无碰撞的所有情况</p>
+<p>分类：带密钥的Hash函数散列值有且仅有双方知道的密钥K来控制，生成的散列值叫MAC。不带密钥的Hash函数散列值叫MDC</p>
+<h4 id="数字签名"><a href="#数字签名" class="headerlink" title="数字签名"></a>数字签名</h4><p>作用：数字签名是一种认证机制，它使得消息的产生者可以添加一个起签名作用的码字。通过计算消息的散列值并用产生者的私钥加密散列值来生成签名。使明文信息的接收者能够验证信息确实来自合法用户，以及确认信息发送者身份。签名保证了消息的来源和完整性。相互认证协议使得通信的各方对相互的身份感到放心，并交换会话密钥。</p>
+<p>与消息认证的区别：消息认证主要是看消息有没有被修改过，但是无法解决双方有利害冲突中的纷争，需要更严格的手段，也就是数字签名</p>
+<h5 id="ElGamal签名方案"><a href="#ElGamal签名方案" class="headerlink" title="ElGamal签名方案"></a>ElGamal签名方案</h5><p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211701.png" alt="1574586969793"></p>
+<p>基本形式：1、对消息整体签字，也就是对消息整个处理后得到签字。2、对消息摘要签字，附在被签消息后面，嵌在消息后面或者某个特定地方</p>
+<p>类别：1、确定性数字签名，明文和签名一一对应。2、概率性数字签名，一个明文能有多个合法签名，每次都不一样。</p>
+<h5 id="直接数字签名DDS"><a href="#直接数字签名DDS" class="headerlink" title="直接数字签名DDS"></a>直接数字签名DDS</h5><p>要求：仅涉及两个通信方，通常先签名，再对消息和签名一起进行加密，安全性依赖私有密钥的安全性。</p>
+<h5 id="仲裁数字签名"><a href="#仲裁数字签名" class="headerlink" title="仲裁数字签名"></a>仲裁数字签名</h5><p>涉及到一个仲裁方(arbiter A)</p>
+<p>签名方的签名报文首先送给仲裁者</p>
+<p>仲裁者对报文和签名进行测试以检验出处和内容，然后注上日期和仲裁说明后发给接收方</p>
+<p>要求仲裁方在一定程度上是可以信任的</p>
+<p>可以用对称密码或公开密钥密码实现</p>
+<p>仲裁方可以知道消息，也可以不知道消息</p>
+<h4 id="CA认证"><a href="#CA认证" class="headerlink" title="CA认证"></a>CA认证</h4><h5 id="Kerberos"><a href="#Kerberos" class="headerlink" title="Kerberos"></a>Kerberos</h5><p>Kerberos是一种设计用于分布式环境下的认证服务，Kerberos利用一个可信的第三方认证服务来完成客户端和服务器端的认证</p>
+<p>l通过提供一个集中的授权服务器来负责用户对服务器的认证和服务器对用户的认证，而不是对每个服务器提供详细的认证协议</p>
+<p>l允许用户通过网络访问分布的服务器</p>
+<p>l不需要信任所有的工作站和服务器</p>
+<p>l只要信任集中式的认证服务器即可</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211702.png" alt="1574587855600"></p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211703.png" alt="1574587986789"></p>
+<h5 id="认证过程-1"><a href="#认证过程-1" class="headerlink" title="认证过程"></a>认证过程</h5><p>简单的认证会话过程可以类比于以下过程：</p>
+<ul>
+<li>学生(C)要借教室(S)，于是要先把自己的ID和证明自己是学生的密码(PS)和要借的教室号(IDS)告诉保安(AS)</li>
+<li>保安给了学生一个一次性的钥匙(Ticket)</li>
+<li>学生通过一次性钥匙去打开了教室门(S)</li>
+</ul>
+<p>所以如果证明自己是学生的密码被偷，或者保安不在的话，就会出问题</p>
+<p>更安全的认证可以类比以下过程:</p>
+<ul>
+<li>学生(C)要借教室(S), 于是要先把自己的ID和老师(TGS)的ID，和现在的时间告诉保安(AS)</li>
+<li>保安给了学生一袋东西，里面有票据和这个学生和老师都知道的一个共享的钥匙(Ticket_tgs)，学生是不能打开这袋东西的</li>
+<li>然后学生要把这袋东西给老师(TGS)，老师就能验证一下，用保安很久之前就给他的钥匙打开了这袋东西，得到了共享的密钥，验证了这个学生确实就是他派出去的学生，就可以把这袋东西里面换成真正的钥匙和一个票据，这个票据是老师和这个教室的锁共享的，别人不知道</li>
+<li>学生来到教室把这袋东西给教室的锁，锁就把真正的钥匙拿了出来开了门，并且把时间+1，表示正常的开门了。时间+1的目的是这个真正的钥匙可能会有有效期，用过多少次就会失效</li>
+</ul>
+<h5 id="证书的层次结构"><a href="#证书的层次结构" class="headerlink" title="证书的层次结构"></a>证书的层次结构</h5><p>每一个用户信任他的父节点的证书 ，通过层次化的结构，可以使一个CA下的用户验证任何其他CA下的用户的公钥证书</p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210407211704.png" alt="image-20200113152433550"></p>
+<p>说白了就是里面的节点既可以当公证也可以当申请的人，A要查看B的话要走一条到B的路径，经过一系列的公证，写下来即可。</p>
 
       
 		<!-- 在这里添加版权内容-->
@@ -354,9 +624,9 @@ div.article-footer-copyright {
 <!-- 版权信息内容在这里 -->
 <div class="article-footer-copyright">
 本文作者：<b><a href="/index.html" target="_blank" title="方既白">方既白</a></b>，采用署名-非商业性使用-相同方式共享<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a>许可协议</br>
-本文标题：<b><a href="/2019/20190717环境安装及相关配置/" target="_blank" title="环境安装及相关配置">环境安装及相关配置</a></b>
+本文标题：<b><a href="/2019/20190308网安复习/" target="_blank" title="网安复习">网安复习</a></b>
 </br>
-本文链接：<b><a href="https://blog.syzhou.site/2019/20190717环境安装及相关配置/" target="_blank" title="环境安装及相关配置">https://blog.syzhou.site/2019/20190717环境安装及相关配置/</a></b>
+本文链接：<b><a href="https://blog.syzhou.site/2019/20190308网安复习/" target="_blank" title="网安复习">https://blog.syzhou.site/2019/20190308网安复习/</a></b>
 </div>
 <! -- 添加版权信息 -->
 		
@@ -402,11 +672,11 @@ div.article-footer-copyright {
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">安装</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">复习</a>
         		</li>
       		
 		</ul>
@@ -473,7 +743,7 @@ div.article-footer-copyright {
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://bshare.optimix.asia/barCode?site=weixin&url=http:/2019/20190717环境安装及相关配置/" alt="微信分享二维码">
+      <img src="http://bshare.optimix.asia/barCode?site=weixin&url=http:/2019/20190308网安复习/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -487,18 +757,18 @@ div.article-footer-copyright {
   
 <nav id="article-nav">
   
-    <a href="/2019/20190718python基础/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/20190628项目之电影推荐平台/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          python基础复习
+          项目介绍之基于协同过滤电影推荐平台
         
       </div>
     </a>
   
   
-    <a href="/2019/20190628项目之电影推荐平台/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">项目介绍之基于协同过滤电影推荐平台</div>
+    <a href="/2018/20181106Linux相关命令/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux相关命令</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -525,7 +795,7 @@ div.article-footer-copyright {
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#生产力脚本"><span class="toc-number">1.</span> <span class="toc-text">生产力脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#UTF-8-with-BOM-与UTF-8相互转换"><span class="toc-number">1.1.</span> <span class="toc-text">UTF-8(with BOM)与UTF-8相互转换</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#anaconda"><span class="toc-number">2.</span> <span class="toc-text">anaconda</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#虚拟环境管理"><span class="toc-number">2.1.</span> <span class="toc-text">虚拟环境管理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#清理anaconda缓存"><span class="toc-number">2.2.</span> <span class="toc-text">清理anaconda缓存</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#jupyter-notebook默认工作目录设置"><span class="toc-number">2.3.</span> <span class="toc-text">jupyter notebook默认工作目录设置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#添加了新的conda环境"><span class="toc-number">2.4.</span> <span class="toc-text">添加了新的conda环境</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#无法链接到链接库问题"><span class="toc-number">2.5.</span> <span class="toc-text">无法链接到链接库问题</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#pip下载慢"><span class="toc-number">2.6.</span> <span class="toc-text">pip下载慢</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CUDA安装"><span class="toc-number">3.</span> <span class="toc-text">CUDA安装</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#安装Pytorch"><span class="toc-number">3.1.</span> <span class="toc-text">安装Pytorch</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#常见安装问题"><span class="toc-number">4.</span> <span class="toc-text">常见安装问题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-Tensorfolw-中ImportError-DLL-load-failed-找不到指定的程序。"><span class="toc-number">4.1.</span> <span class="toc-text">1 Tensorfolw 中ImportError: DLL load failed: 找不到指定的程序。</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-Pycharm-新版本打开md文件卡死"><span class="toc-number">4.2.</span> <span class="toc-text">2 Pycharm 新版本打开md文件卡死</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-pillow-ImportError-cannot-import-name-‘PILLOW-VERSION"><span class="toc-number">4.3.</span> <span class="toc-text">3 pillow ImportError: cannot import name ‘PILLOW_VERSION</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-bert-as-service-安装"><span class="toc-number">4.4.</span> <span class="toc-text">4 bert_as_service 安装</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#常见配置问题"><span class="toc-number">5.</span> <span class="toc-text">常见配置问题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-pycharm设置Tab为4空格-并显示空格"><span class="toc-number">5.1.</span> <span class="toc-text">1 pycharm设置Tab为4空格,并显示空格</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-typora-写博客时的配置"><span class="toc-number">5.2.</span> <span class="toc-text">2 typora 写博客时的配置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-Pycharm新建模板默认添加个人信息"><span class="toc-number">5.3.</span> <span class="toc-text">3 Pycharm新建模板默认添加个人信息</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#网安"><span class="toc-number">1.</span> <span class="toc-text">网安</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#相关概念"><span class="toc-number">1.1.</span> <span class="toc-text">相关概念</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#安全服务"><span class="toc-number">1.1.1.</span> <span class="toc-text">安全服务</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#安全机制"><span class="toc-number">1.1.2.</span> <span class="toc-text">安全机制</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#对安全的攻击"><span class="toc-number">1.1.3.</span> <span class="toc-text">对安全的攻击</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#主动攻击和被动攻击"><span class="toc-number">1.1.4.</span> <span class="toc-text">主动攻击和被动攻击</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#简单加密系统模型"><span class="toc-number">1.1.5.</span> <span class="toc-text">简单加密系统模型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#理论安全和实际安全"><span class="toc-number">1.1.6.</span> <span class="toc-text">理论安全和实际安全</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#对称密码体制和非对称密码体制"><span class="toc-number">1.1.7.</span> <span class="toc-text">对称密码体制和非对称密码体制</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#序列密码体制和分组密码体制"><span class="toc-number">1.1.8.</span> <span class="toc-text">序列密码体制和分组密码体制</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#确定型密码体制和概率密码体制"><span class="toc-number">1.1.9.</span> <span class="toc-text">确定型密码体制和概率密码体制</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#单向函数型密码体制和双向变换型密码体制"><span class="toc-number">1.1.10.</span> <span class="toc-text">单向函数型密码体制和双向变换型密码体制</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#confusion和diffusion-混淆和扩散"><span class="toc-number">1.1.11.</span> <span class="toc-text">confusion和diffusion(混淆和扩散)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#现代密码学基本原则及理论"><span class="toc-number">1.1.12.</span> <span class="toc-text">现代密码学基本原则及理论</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#离散复习-群、环、域-与模运算"><span class="toc-number">1.2.</span> <span class="toc-text">离散复习(群、环、域)与模运算</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#群G-记作-G-•"><span class="toc-number">1.2.1.</span> <span class="toc-text">群G, 记作{G, •}</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#交换群Abelian-Group："><span class="toc-number">1.2.2.</span> <span class="toc-text">交换群Abelian Group：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#循环群Cyclic-Group"><span class="toc-number">1.2.3.</span> <span class="toc-text">循环群Cyclic Group</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#环R-由-R-x-表示"><span class="toc-number">1.2.4.</span> <span class="toc-text">环R, 由{R, +, x}表示</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#域F-可以记为-F-x"><span class="toc-number">1.2.5.</span> <span class="toc-text">域F, 可以记为{F, +, x}</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#模算术运算"><span class="toc-number">1.2.6.</span> <span class="toc-text">模算术运算</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#欧几里得算法"><span class="toc-number">1.2.7.</span> <span class="toc-text">欧几里得算法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#同余"><span class="toc-number">1.2.8.</span> <span class="toc-text">同余</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#加法逆元和乘法逆元"><span class="toc-number">1.2.9.</span> <span class="toc-text">加法逆元和乘法逆元</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#计算乘法逆元，扩展欧几里得算法"><span class="toc-number">1.2.10.</span> <span class="toc-text">计算乘法逆元，扩展欧几里得算法</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数论三大定理的概念与证明"><span class="toc-number">1.3.</span> <span class="toc-text">数论三大定理的概念与证明</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#数论基本知识"><span class="toc-number">1.3.1.</span> <span class="toc-text">数论基本知识</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#费马定理"><span class="toc-number">1.3.2.</span> <span class="toc-text">费马定理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#费马小定理和欧拉定理"><span class="toc-number">1.3.3.</span> <span class="toc-text">费马小定理和欧拉定理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#中国剩余定理"><span class="toc-number">1.3.4.</span> <span class="toc-text">中国剩余定理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#离散对数问题"><span class="toc-number">1.3.5.</span> <span class="toc-text">离散对数问题</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#对称密码"><span class="toc-number">1.4.</span> <span class="toc-text">对称密码</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#DES（数据加密标准）"><span class="toc-number">1.4.1.</span> <span class="toc-text">DES（数据加密标准）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#DES加解密过程"><span class="toc-number">1.4.2.</span> <span class="toc-text">DES加解密过程</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#多重DES"><span class="toc-number">1.4.3.</span> <span class="toc-text">多重DES</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#分组密码的五种工作模式："><span class="toc-number">1.4.4.</span> <span class="toc-text">分组密码的五种工作模式：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#公钥密码学-也叫非对称密码"><span class="toc-number">1.5.</span> <span class="toc-text">公钥密码学(也叫非对称密码)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#公钥密码应用"><span class="toc-number">1.5.1.</span> <span class="toc-text">公钥密码应用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#加密过程"><span class="toc-number">1.5.2.</span> <span class="toc-text">加密过程</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#认证过程"><span class="toc-number">1.5.3.</span> <span class="toc-text">认证过程</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#非对称相关概念"><span class="toc-number">1.5.4.</span> <span class="toc-text">非对称相关概念</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#RSA算法"><span class="toc-number">1.5.5.</span> <span class="toc-text">RSA算法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#RSA证明"><span class="toc-number">1.5.6.</span> <span class="toc-text">RSA证明</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#RSA计算"><span class="toc-number">1.5.7.</span> <span class="toc-text">RSA计算</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#RSA的缺点"><span class="toc-number">1.5.8.</span> <span class="toc-text">RSA的缺点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#对RSA的攻击方法"><span class="toc-number">1.5.9.</span> <span class="toc-text">对RSA的攻击方法</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#公钥密码学之密钥管理"><span class="toc-number">1.6.</span> <span class="toc-text">公钥密码学之密钥管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#几种公钥分配方法："><span class="toc-number">1.6.1.</span> <span class="toc-text">几种公钥分配方法：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#公钥授权"><span class="toc-number">1.6.2.</span> <span class="toc-text">公钥授权</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#公钥证书"><span class="toc-number">1.6.3.</span> <span class="toc-text">公钥证书</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#利用公钥密码分配对称加密的密钥"><span class="toc-number">1.7.</span> <span class="toc-text">利用公钥密码分配对称加密的密钥</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#具有保密性和真实性的密钥分配"><span class="toc-number">1.7.1.</span> <span class="toc-text">具有保密性和真实性的密钥分配</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Diffie-Hellman算法"><span class="toc-number">1.7.2.</span> <span class="toc-text">Diffie-Hellman算法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#中间人攻击"><span class="toc-number">1.7.3.</span> <span class="toc-text">中间人攻击</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#防范中间人攻击"><span class="toc-number">1.7.4.</span> <span class="toc-text">防范中间人攻击</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ElGamal加密方案"><span class="toc-number">1.7.5.</span> <span class="toc-text">ElGamal加密方案</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ElGamal加密方案计算"><span class="toc-number">1.7.6.</span> <span class="toc-text">ElGamal加密方案计算</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#消息认证"><span class="toc-number">1.8.</span> <span class="toc-text">消息认证</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#可能受到的攻击"><span class="toc-number">1.8.1.</span> <span class="toc-text">可能受到的攻击</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#消息认证方法"><span class="toc-number">1.8.2.</span> <span class="toc-text">消息认证方法</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数字签名"><span class="toc-number">1.9.</span> <span class="toc-text">数字签名</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#ElGamal签名方案"><span class="toc-number">1.9.1.</span> <span class="toc-text">ElGamal签名方案</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#直接数字签名DDS"><span class="toc-number">1.9.2.</span> <span class="toc-text">直接数字签名DDS</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#仲裁数字签名"><span class="toc-number">1.9.3.</span> <span class="toc-text">仲裁数字签名</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CA认证"><span class="toc-number">1.10.</span> <span class="toc-text">CA认证</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Kerberos"><span class="toc-number">1.10.1.</span> <span class="toc-text">Kerberos</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#认证过程-1"><span class="toc-number">1.10.2.</span> <span class="toc-text">认证过程</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#证书的层次结构"><span class="toc-number">1.10.3.</span> <span class="toc-text">证书的层次结构</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>

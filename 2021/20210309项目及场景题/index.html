@@ -16,24 +16,24 @@
 <meta property="og:site_name" content="既白">
 <meta property="og:description" content="项目自我介绍我叫周思远，大工软院19届，现保研到华科计院。在校期间参加过计算机设计大赛等科创竞赛，也获得过三好学生、优秀毕业生，优秀党员等荣誉。">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105022.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105023.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105024.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105025.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105026.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105027.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105028.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105029.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105030.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105031.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105032.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105033.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105034.png">
-<meta property="og:updated_time" content="2022-01-06T08:52:43.000Z">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105022.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105023.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105024.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105025.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105026.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105027.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105028.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105029.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105030.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105031.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105032.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105033.png">
+<meta property="og:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105034.png">
+<meta property="og:updated_time" content="2023-07-18T13:37:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="项目及场景题">
 <meta name="twitter:description" content="项目自我介绍我叫周思远，大工软院19届，现保研到华科计院。在校期间参加过计算机设计大赛等科创竞赛，也获得过三好学生、优秀毕业生，优秀党员等荣誉。">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105022.png">
+<meta name="twitter:image" content="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105022.png">
   
     <link rel="alternative" href="/atom.xml" title="既白" type="application/atom+xml">
   
@@ -230,8 +230,8 @@ var _hmt = _hmt || [];
 <p>通用性</p>
 <h5 id="电影推荐"><a href="#电影推荐" class="headerlink" title="电影推荐"></a>电影推荐</h5><p>DataModel：DataModel 是用户喜好信息的抽象接口，它的具体实现支持从任意类型的数据源抽取用户喜好信息。Taste 默认提供 JDBCDataModel 和 FileDataModel，分别支持从数据库和文件中读取用户的喜好信息。<br>    UserSimilarity 和 ItemSimilarity：UserSimilarity 用于定义两个用户间的相似度，它是基于协同过滤的推荐引擎的核心部分，可以用来计算用户的“邻居”，这里我们将与当前用户口味相似的用户称为他的邻居。ItemSimilarity 类似的，计算内容之间的相似度。<br>    UserNeighborhood：用于基于用户相似度的推荐方法中，推荐的内容是基于找到与当前用户喜好相似的“邻居用户”的方式产生的。UserNeighborhood 定义了确定邻居用户的方法，具体实现一般是基于 UserSimilarity 计算得到的。</p>
 <p>​    Recommender：Recommender 是推荐引擎的抽象接口，Taste 中的核心组件。程序中，为它提供一个 DataModel，它可以计算出对不同用户的推荐内容。Recommender是Taste中的核心组件，它可以根据提供的数据模型计算出对不同用户的推荐结果。其中包含的子类可以从内存中缓存其他的推荐结果，因此在低内存情况下可以通过让Java虚拟机取回推荐的结果再输出。在Recommender组件里包含的推荐方法一般会将结果储存在List中，另外estimatePreference()方法还能预估用户对物品的评分。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105022.png" alt="img"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105023.png" alt="image-20191229215007041"></p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105022.png" alt="img"></p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105023.png" alt="image-20191229215007041"></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AuthenticationSuccessHandlerImpl</span> <span class="keyword">implements</span> <span class="title">AuthenticationSuccessHandler</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onAuthenticationSuccess</span><span class="params">(HttpServletRequest request, HttpServletResponse response, Authentication auth)</span></span></span><br><span class="line"><span class="function">            <span class="keyword">throws</span> IOException, ServletException </span>&#123;</span><br><span class="line">        UserAuth userAuth = (UserAuth) auth.getPrincipal();</span><br><span class="line">        HttpSession session = request.getSession();</span><br><span class="line">        <span class="keyword">switch</span> (userAuth.getRole()) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">"ADMIN"</span>:</span><br><span class="line">            session.setAttribute(<span class="string">"id"</span>, userAuth.getId());</span><br><span class="line">            session.setAttribute(<span class="string">"name"</span>, userAuth.getUsername());</span><br><span class="line">            session.setAttribute(<span class="string">"role"</span>, <span class="string">"ADMIN"</span>);</span><br><span class="line">            response.sendRedirect(<span class="string">"admin"</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">"USER"</span>:</span><br><span class="line">            session.setAttribute(<span class="string">"id"</span>, userAuth.getId());</span><br><span class="line">            session.setAttribute(<span class="string">"name"</span>, userAuth.getUsername());</span><br><span class="line">            session.setAttribute(<span class="string">"role"</span>, <span class="string">"USER"</span>);</span><br><span class="line">            response.sendRedirect(<span class="string">"user"</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h5 id="论文格式检测系统"><a href="#论文格式检测系统" class="headerlink" title="论文格式检测系统"></a>论文格式检测系统</h5><p><strong>文档英文，自己摸索对应关系，有错误的，段落格式，单字格式</strong></p>
 <p><strong>瞎搞，把无关的文档往里面传，系统崩溃，try catch</strong> </p>
@@ -304,7 +304,7 @@ var _hmt = _hmt || [];
 </table>
 <p><strong>2.字号</strong></p>
 <p>&lt; sz&gt;指出了&lt; r&gt;元素中的文本&lt; t&gt;的字号样式。&lt; sz&gt;的属性Val的值代表了字号的大小，如&lt;w:sz w:val=”24”/&gt;代表字号为24/2=12磅。查询字号对照表【参考文献】得到字号和磅数的对应关系，就可以得到实际的字号为“小四”。</p>
-<h3 id="场景题"><a href="#场景题" class="headerlink" title="场景题"></a>场景题</h3><h5 id="在O-1-时间内删除链表节点"><a href="#在O-1-时间内删除链表节点" class="headerlink" title="在O(1)时间内删除链表节点"></a>在O(1)时间内删除链表节点</h5><p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105024.png" alt="这里写图片描述"></p>
+<h3 id="场景题"><a href="#场景题" class="headerlink" title="场景题"></a>场景题</h3><h5 id="在O-1-时间内删除链表节点"><a href="#在O-1-时间内删除链表节点" class="headerlink" title="在O(1)时间内删除链表节点"></a>在O(1)时间内删除链表节点</h5><p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105024.png" alt="这里写图片描述"></p>
 <h4 id="海量数据处理"><a href="#海量数据处理" class="headerlink" title="海量数据处理"></a>海量数据处理</h4><h5 id="怎样对10亿个数字（字符串）快速去重？"><a href="#怎样对10亿个数字（字符串）快速去重？" class="headerlink" title="怎样对10亿个数字（字符串）快速去重？"></a>怎样对10亿个数字（字符串）快速去重？</h5><p>对于海量数据处理，思路基本上是：必须分块处理，然后再合并起来。</p>
 <p>方法一：</p>
 <p>通过哈希算法，将10亿个电话号码按照哈希值落在多个文件中，</p>
@@ -321,22 +321,22 @@ var _hmt = _hmt || [];
 <h5 id="有10个1G⽂件，每⾏都是⼀个可重复⽤户query，按query频度排序。"><a href="#有10个1G⽂件，每⾏都是⼀个可重复⽤户query，按query频度排序。" class="headerlink" title="有10个1G⽂件，每⾏都是⼀个可重复⽤户query，按query频度排序。"></a>有10个1G⽂件，每⾏都是⼀个可重复⽤户query，按query频度排序。</h5><p>顺序读取⼗个⽂件并采取哈希，将query写⼊10个⽂件中<br>通过hash_map(query, count)统计每个query出现次数，⾄少2G内存<br>通过得到的hashmap 中 query 和 querycount，对query_count排序并将重新输出到⽂件<br>中，得到已排序好的⽂件<br>对⼗个⽂件进⾏归并排序（外排序）</p>
 <h5 id="A-B两个⽂件各存放50亿url，每个为64Byte，限制内存4G找出公共url。"><a href="#A-B两个⽂件各存放50亿url，每个为64Byte，限制内存4G找出公共url。" class="headerlink" title="A,B两个⽂件各存放50亿url，每个为64Byte，限制内存4G找出公共url。"></a>A,B两个⽂件各存放50亿url，每个为64Byte，限制内存4G找出公共url。</h5><p>对A和B两个⼤⽂件，先通过url % 1000将数据映射到1000个⽂件中，单个⽂件⼤⼩约<br>320M（我们只需要检查对应⼩⽂件A1 V B1……，不对应⼩⽂件不会有相同url）<br>通过hashset 统计，把 A1 的 url 存储到 hashset中，再遍历对应的B1⼩⽂件，检查是否在<br>hash_set中，若存在则写⼊外存。重复循环处理对应的1000个对。</p>
 <h4 id="BitMap"><a href="#BitMap" class="headerlink" title="BitMap"></a>BitMap</h4><p>32位机器上，对于一个整型数，比如int a=1 在内存中占32bit位，这是为了方便计算机的运算。但是对于某些应用场景而言，这属于一种巨大的浪费，因为我们可以用对应的32bit位对应存储十进制的0-31个数，而这就是Bit-<br>map的基本思想。Bit-map算法利用这种思想处理大量数据的排序、查询以及去重。 Bitmap在用户群做交集和并集运算的时候也有极大的便利。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105025.png" alt="image-20210408124030233"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105026.png" alt="image-20210408124139472"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105027.png" alt="image-20210408124156380"></p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105025.png" alt="image-20210408124030233"></p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105026.png" alt="image-20210408124139472"></p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105027.png" alt="image-20210408124156380"></p>
 <h4 id="常见的限流算法"><a href="#常见的限流算法" class="headerlink" title="常见的限流算法"></a>常见的限流算法</h4><h5 id="计数器法"><a href="#计数器法" class="headerlink" title="计数器法"></a>计数器法</h5><p>计数器法是限流算法里最简单也是最容易实现的一种算法。比如我们规定，对于A接口来说，我们1分钟的访问次数不能超过100个。那么我们可以这么做：在一开 始的时候，我们可以设置一个计数器counter，每当一个请求过来的时候，counter就加1，如果counter的值大于100并且该请求与第一个 请求的间隔时间还在1分钟之内，那么说明请求数过多；如果该请求与第一个请求的间隔时间大于1分钟，且counter的值还在限流范围内，那么就重置<br>counter，具体算法的示意图如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105028.png" alt="image-20210408124654747"></p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105028.png" alt="image-20210408124654747"></p>
 <p>这个算法虽然简单，但是有一个十分致命的问题，那就是临界问题，我们看下图：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105029.png" alt="image-20210408124747364"></p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105029.png" alt="image-20210408124747364"></p>
 <p>从上图中我们可以看到，假设有一个恶意用户，他在0:59时，瞬间发送了100个请求，并且1:00又瞬间发送了100<br>个请求，那么其实这个用户在 1秒里面，瞬间发送了200个请求。我们刚才规定的是1分钟最多100个请求，也就是<br>每秒钟最多1.7个请求，用户通过在时间窗口的重置节点处突发请求， 可以瞬间超过我们的速率限制。用户有可能<br>通过算法的这个漏洞，瞬间压垮我们的应用。</p>
 <h5 id="滑动窗口"><a href="#滑动窗口" class="headerlink" title="滑动窗口"></a>滑动窗口</h5><p>滑动窗口，又称rolling window。为了解决这个问题，我们引入了滑动窗口算法。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105030.png" alt="image-20210408124904461"></p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105030.png" alt="image-20210408124904461"></p>
 <p>在上图中，整个红色的矩形框表示一个时间窗口，在我们的例子中，一个时间窗口就是一分钟。然后我们将时间窗<br>口进行划分，比如图中，我们就将滑动窗口 划成了6格，所以每格代表的是10秒钟。每过10秒钟，我们的时间窗口就会往右滑动一格。每一个格子都有自己独立的计数器counter，比如当一个请求 在0:35秒的时候到达，那么<br>0:30~0:39对应的counter就会加1。<br>那么滑动窗口怎么解决刚才的临界问题的呢？我们可以看上图，0:59到达的100个请求会落在灰色的格子中，而<br>1:00到达的请求会落在橘黄色的格 子中。当时间到达1:00时，我们的窗口会往右移动一格，那么此时时间窗口内的总请求数量一共是200个，超过了限定的100个，所以此时能够检测出来触 发了限流</p>
 <h5 id="漏桶算法"><a href="#漏桶算法" class="headerlink" title="漏桶算法"></a>漏桶算法</h5><p>漏桶算法，又称leaky bucket。首先，我们有一个固定容量的桶，有水流进来，也有水流出去。对于流进来的水来说，我们无法预计一共有多 少水会流进来，也无法预计水流的速度。但是对于流出去的水来说，这个桶可以固定水流出的速率。而且，当桶满了之后，多余的水将会溢出。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105031.png" alt="image-20210408125032043"></p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105031.png" alt="image-20210408125032043"></p>
 <h5 id="令牌桶算法"><a href="#令牌桶算法" class="headerlink" title="令牌桶算法"></a>令牌桶算法</h5><p>令牌桶算法，又称token bucket。从图中我们可以看到，令牌桶算法比漏桶算法稍显复杂。首先，我们有一个固定容量的桶，桶里存放着令牌（token）。桶一开始是空的，token以 一个固定的速率r往桶里填充，直到达到桶的容量，多余的令牌将会被丢弃。每当一个请求过来时，就会尝试从桶里移除一个令牌，如果没有令牌的话，请求无法通 过。</p>
 <p>令牌桶算法是网络流量整形（Traffic Shaping）和速率限制（Rate Limiting）中最常使用的一种算法。典型情况<br>下，令牌桶算法用来控制发送到网络上的数据的数目，并允许突发数据的发送(百科)。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105032.png" alt="image-20210408125304994"></p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105032.png" alt="image-20210408125304994"></p>
 <p><strong>计数器 VS 滑动窗口</strong><br>计数器算法是最简单的算法，可以看成是滑动窗口的低精度实现。滑动窗口由于需要存储多份的计数器（每一个格<br>子存一份），所以滑动窗口在实现上需要更多的存储空间。也就是说，如果滑动窗口的精度越高，需要的存储空间<br>就越大。<br><strong>漏桶算法 VS 令牌桶算法</strong><br>漏桶算法和令牌桶算法最明显的区别是令牌桶算法允许流量一定程度的突发。因为默认的令牌桶算法，取走token<br>是不需要耗费时间的，也就是说，假设桶内有100个token时，那么可以瞬间允许100个请求通过。<br>令牌桶算法由于实现简单，且允许某些流量的突发，对用户友好，所以被业界采用地较多。当然我们需要具体情况<br>具体分析，只有最合适的算法，没有最优的算法。</p>
 <h4 id="设计一个分布式环境下全局唯一的发号器"><a href="#设计一个分布式环境下全局唯一的发号器" class="headerlink" title="设计一个分布式环境下全局唯一的发号器"></a>设计一个分布式环境下全局唯一的发号器</h4><h5 id="1、UUID"><a href="#1、UUID" class="headerlink" title="1、UUID"></a>1、UUID</h5><p>常见的方式。可以利用数据库也可以利用程序生成，一般来说全球唯一。<br>优点：</p>
 <ol>
@@ -366,7 +366,7 @@ var _hmt = _hmt || [];
 </ol>
 <p>优化方案：<br>针对主库单点，如果有多个Master库，则每个Master库设置的起始数字不一样，步长一样，可以是Master的个<br>数。比如：Master1 生成的是 1，4，7，10，Master2生成的是2,5,8,11 Master3生成的是 3,6,9,12。这样就可以<br>有效生成集群中的唯一ID，也可以大大降低ID生成数据库操作的负载。</p>
 <h5 id="3、数据库sequence表以及乐观锁"><a href="#3、数据库sequence表以及乐观锁" class="headerlink" title="3、数据库sequence表以及乐观锁"></a>3、数据库sequence表以及乐观锁</h5><p>我们可以单独设置一张表，来存储所有表的下一个主键的值，例如现在有A、B、C三个表，sequence表结构如下</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105033.png" alt="image-20210408205931380"></p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105033.png" alt="image-20210408205931380"></p>
 <p>然后，每当需要获取下一个主键值的时候，首先使用select语句获取主键，然后使用数据库的乐观锁机制去update<br>这个sequence表，更新成功则说明获取主键成功，更新失败则说明存在并发，当前主键被别的机器抢走了，需要<br>重新select出新的主键，载update。例如要获取表B的下一个主键，需要发送sql</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">id</span> <span class="keyword">from</span> <span class="keyword">sequence</span> <span class="keyword">where</span> <span class="keyword">name</span>=B</span><br><span class="line">//获得<span class="keyword">id</span>=<span class="number">100</span>,更新<span class="keyword">sequence</span>表</span><br><span class="line"><span class="keyword">update</span> <span class="keyword">sequence</span> <span class="keyword">set</span> <span class="keyword">id</span>=<span class="keyword">id</span>+<span class="number">1</span> <span class="keyword">where</span> <span class="keyword">name</span>=B <span class="keyword">and</span> <span class="keyword">id</span>=<span class="number">100</span></span><br></pre></td></tr></table></figure>
 <p>优点：</p>
@@ -394,7 +394,7 @@ var _hmt = _hmt || [];
 <h5 id="5、Twitter的snowflake算法"><a href="#5、Twitter的snowflake算法" class="headerlink" title="5、Twitter的snowflake算法"></a>5、Twitter的snowflake算法</h5><p>snowflake 是 twitter 开源的分布式ID生成算法，其核心思想为，一个long型的ID：</p>
 <p>41 bit 作为毫秒数 - 41位的长度可以使用69年<br>10 bit 作为机器编号 （5个bit是数据中心，5个bit的机器ID） - 10位的长度最多支持部署1024个节点<br>12 bit 作为毫秒内序列号 - 12位的计数顺序号支持每个节点每毫秒产生4096个ID序号</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">id</span> <span class="keyword">from</span> <span class="keyword">sequence</span> <span class="keyword">where</span> <span class="keyword">name</span>=B</span><br><span class="line">//获得<span class="keyword">id</span>=<span class="number">100</span>,更新<span class="keyword">sequence</span>表</span><br><span class="line"><span class="keyword">update</span> <span class="keyword">sequence</span> <span class="keyword">set</span> <span class="keyword">id</span>=<span class="keyword">id</span>+<span class="number">1</span> <span class="keyword">where</span> <span class="keyword">name</span>=B <span class="keyword">and</span> <span class="keyword">id</span>=<span class="number">100</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdelivr.net/gh/siyuanzhou/pic/img/20210414105034.png" alt="image-20210408210308572"></p>
+<p><img src="https://pic-1253537137.cos.ap-guangzhou.myqcloud.com/pic/img/20210414105034.png" alt="image-20210408210308572"></p>
 <p>Snowflake图示<br>算法单机每秒内理论上最多可以生成1000*(2^12)，也就是400W的ID，完全能满足业务的需求。<br>snowflake算法可以根据自身项目的需要进行一定的修改。比如估算未来的数据中心个数，每个数据中心的机器数<br>以及统一毫秒可以能的并发数来调整在算法中所需要的bit数。<br>优点：</p>
 <ol>
 <li>不依赖于数据库，灵活方便，且性能优于数据库。</li>
